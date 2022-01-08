@@ -1,0 +1,46 @@
+body {
+    max-width: 500px;
+    text-align: center;
+    font-family: 'Merriweather', cursive;
+}
+.name,
+footer {
+	margin: 10px auto;
+	border: 1px solid #999;
+	padding: 10px;
+	max-width: 500px;
+    max-height: 200px;
+	background-color: rgb(68, 93, 167);
+	box-shadow: 0 0 30px;
+    border-radius: 15px;
+}
+.name {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#update {
+    color:rgb(173, 163, 12)
+}
+#note {
+    color:darkgrey;
+    font-size:15px ;
+    padding-bottom: 15px;
+    padding-top: 0px;
+}
+img {
+    max-width: 150px;
+    
+}
+
+h2 {
+	font-size: 24px;
+    text-shadow: 2px 2px #4b4a4a;
+	margin: 0;
+}
+h1,
+#signature {
+    color: antiquewhite;
+}
+#list {
+    list-style-position: inside;
+}
