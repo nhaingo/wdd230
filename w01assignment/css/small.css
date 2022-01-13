@@ -1,7 +1,8 @@
 body {
     max-width: 500px;
     text-align: center;
-    font-family: 'Merriweather', cursive;
+    font-family: 'Merriweather', serif;
+    margin-left: 50px;
 }
 .name,
 footer {
@@ -15,11 +16,10 @@ footer {
     border-radius: 15px;
 }
 .name {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+    font-size: 10px;
 }
 #update {
-    color:rgb(173, 163, 12)
+    color:rgb(19, 17, 1)
 }
 #note {
     color:darkgrey;
