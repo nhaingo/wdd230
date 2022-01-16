@@ -11,7 +11,6 @@ body {
 header {
     background-color:rgb(27, 142, 230);
     border-radius: 5px;
-    ruby-span: 3;
     
 }
 
@@ -75,7 +74,6 @@ footer {
 	margin: 10px auto;
 	border: 1px solid #999;
 	padding: 10px;
-	max-width: auto;
     max-height: 200px;
 	background-color: rgb(27, 142, 230);
 	box-shadow: 0 0 30px;
