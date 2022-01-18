@@ -1,9 +1,10 @@
-body {
+.content {
     max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 10px;
     text-align: center;
     font-family: 'Merriweather', serif;
-    margin-left: 50px;
-    align-self: center;
 }
 .name,
 footer {
