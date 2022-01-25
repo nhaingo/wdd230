@@ -1,0 +1,16 @@
+@media only screen and (min-width: 60em) {
+#content {
+    max-width: 1040px;
+}
+.logo-box{
+    width: 10px;
+}
+nav a {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(5em, 1fr));
+    
+}
+h1{
+    font-size: 40px;
+}
+}

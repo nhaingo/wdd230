@@ -1,0 +1,19 @@
+@media only screen and (min-width: 37.5em) {
+
+    #content{
+        max-width: 760px;
+    }
+    nav ul { display: flex; }
+    nav a {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(3em, 1fr));
+        
+    }
+    h1{
+        margin-left: 140px;
+        font-size: 32px;
+    }
+    nav div {
+        padding-left: 0em;
+    }
+}
