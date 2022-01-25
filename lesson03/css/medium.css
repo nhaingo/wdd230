@@ -1,7 +1,7 @@
 @media only screen and (min-width: 37.5em) {
 
     #content{
-        max-width: 760px;
+        max-width: 960px;
     }
     nav ul { display: flex; }
     nav a {

@@ -10,7 +10,7 @@ nav a {
     grid-template-columns: repeat(4, minmax(5em, 1fr));
     
 }
-h1{
+h1 {
     font-size: 40px;
-}
+ }
 }

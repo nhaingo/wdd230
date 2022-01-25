@@ -1,18 +1,11 @@
 @media only screen and (min-width: 60em) {
-    body {  
-        max-width: 1040px;
-        align-self: center;
-    }
+
     main{
         grid-template-columns: 1fr 1fr 1fr;
         margin: auto;
     }
     img {
         max-width: 95%;
-    }
-
-    .card{
-        color: aliceblue;
     }
     .section3{
         grid-column: 3;

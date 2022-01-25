@@ -6,30 +6,47 @@
         <meta name = "description" content ="WDD230 Lesson 03: Color Scheme for the Green'Fingers Chamber of Commerce"/>
         <title>Haingotiana WDD230 Chamber of Commerce Website</title>
         <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/color-scheme.css">
+        <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/medium.css">
         <link rel="stylesheet" href="./css/large.css">
     </head>
     <body>
-        <main>
-            <h1>
-                Color Scheme
-            </h1>
-                <p>Palette URL: <a href="https://coolors.co/palette/ffffff-104911-ffd449-f9a620" target="_blank">https://coolors.co/palette/ffffff-104911-ffd449-f9a620</a></p>
-            <table class="colors">
-                <tr><th>Primary</th><th>Secondary</th><th>Accent 1</th><th>Accent 2</th></tr>
-                <tr><td class="primary">[#ffffff]</td><td class="secondary">[#104911]</td><td class="accent1">[#ffd449]</td><td class="accent2">[#F9A620]</td></tr>
-            </table>
-         </main>
-    <footer>
-        <div id="signature">
-            &copy;<span id="year"></span> .:|:. Haingotiana N. Rambikarison .:|:. Madagascar
+        <div id="content">
+            <header>
+              <div id="heading">
+                <div class="logo-box">
+                  <img src="./images/Green'Fingers.jpg" height="auto" width="auto" alt = "green-fingers-chamber logo picture">
+                </div>
+                <h1>Green'Fingers Chamber - Site Plan</h1>
+              </div>
+              <nav>
+                <ul>
+                  <div><a href="index.html">&#127968 HOME</a></div>
+                  <div><a href="target-audience.html" target="_blank">TARGET AUDIENCE</a></div>
+                  <div><a href="color-scheme.html" target="_blank">COLOR SCHEME</a></div>
+                  <div><a href="typographie.html" target="_blank">TYPOGRAPHIE</a></div>
+                </nav>
+              </ul>
+            </header>
+            <main>
+                <h1>
+                    Color Scheme
+                </h1>
+                    <p>Palette URL: <a href="https://coolors.co/palette/ffffff-104911-ffd449-f9a620" target="_blank">https://coolors.co/palette/ffffff-104911-ffd449-f9a620</a></p>
+                <table class="colors">
+                    <tr><th>Primary</th><th>Secondary</th><th>Accent 1</th><th>Accent 2</th></tr>
+                    <tr><td class="primary">[#ffffff]</td><td class="secondary">[#104911]</td><td class="accent1">[#ffd449]</td><td class="accent2">[#F9A620]</td></tr>
+                </table>
+             </main>
+            <footer>
+                <div id="signature">
+                &copy;<span id="year"></span> .:|:. Haingotiana N. Rambikarison .:|:. Madagascar
+            </div>
+            <div id="update">
+                Last Modified: <span id="lastModifiedDate"></span>
+            </div>   
+            </footer>    
+            <script src="./js/date.js"></script>
         </div>
-        <div id="update">
-            Last Modified: <span id="lastModifiedDate"></span>
-        </div>   
-    </footer>
-    <script src="./js/date.js"></script>
-    </div>
-  </body>
+    </body>
 </html>

@@ -43,6 +43,11 @@ h1 {
 }
 
 /*main*/
+.details {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+}
 .logo-box-main> img{
     
     display: block;
@@ -60,3 +65,41 @@ footer{
     border-radius: 5px;
     box-shadow: 10px;
 }
+
+/*color-scheme specific css*/
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #104911;
+    --accent1-color: #ffd449;
+    --accent2-color: #F9A620;
+  }
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+.colors th {
+    background-color: #999;
+  }
+.colors td{
+    width: 25%;
+    height: 3em;
+  }
+.primary {
+    background-color: var(--primary-color);
+  }
+.secondary {
+    background-color: var(--secondary-color);
+  }
+.accent1 {
+    background-color: var(--accent1-color);
+  }
+.accent2{
+    background-color: var(--accent2-color);
+  }
+  
+p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+  }
