@@ -1,0 +1,32 @@
+/* Larger viewports */
+@media only screen and (min-width: 64rem) {
+	body {
+		max-width: 1980px;
+	}
+
+	#site-name {
+		font-size: 36px;
+		justify-content: left;
+	}
+	
+	nav ul li a{
+		padding:1rem;
+		font-size: 16px;
+		justify-content: center;
+		
+	}
+	.social a img{
+		width: 3em;
+		margin-right:0;
+		justify-content: right;
+	}
+	nav button{
+        display: none;
+    }
+	nav ul#primaryNav {
+        display:flex;
+        margin-left: 1vw;
+        margin-top:30px;
+        margin-bottom:0px;
+    }
+}

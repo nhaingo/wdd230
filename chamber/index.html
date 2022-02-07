@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/small.css">
+        <link rel="stylesheet" href="./css/base.css">
         <link rel="stylesheet" href="./css/medium.css">
         <link rel="stylesheet" href="./css/large.css">
         
@@ -22,22 +22,25 @@
         <header>
             <section class="headings">
                 <div id="site-logo">
-                    <img src="./images/greenfingers.jpg" alt="Image of Green'Fingers logo">
+                    <a href="index.html"><img src="./images/greenfingers.jpg" alt="Image of Green'Fingers logo"></a>
                 </div>
                 <h1 id="site-name">Green'Fingers Chamber</h1>  
-                <div id="social">
-                <p>facebook</p>
-                <p>instagram</p>
+                <div class="social">
+                    <a id="fb" href="https://facebook.com/"><img src="./images/facebook.png" alt="facebook logo"></a>
+                    <a id="in" href="https://linkedin.com/"><img src="./images/linkedin.jpg" alt="Linkedin logo"></a>
+                </div>
+                <nav>
+                    <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                    <ul id="primaryNav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Board Members</a></li>
+                    </ul>
+                </nav>
             </section>
-            </div>
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Contact Us</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Calendar</a></li>
-                    <li><a>Board Members</a></li>
-                </ul>
-            </nav>
+            <div id="date"></div>
         </header>
         <main>
             <div class="container">
@@ -65,11 +68,13 @@
             <p>120 I Talatamaty Ambohidratrimo - Tana 105</p>
             <p>greenfingreschamber@chamber.org</p>
             <p>Map</p>
-            <div id="signature">&copy;WDD230: Haingotiana N Rambikarison Chamber Project</div>
+            <div id="signature">
+                &copy;<span id="year"></span>WDD230: Haingotiana N Rambikarison Chamber Project</div>
             <div id="update">
                 Last Modified: <span id="lastModifiedDate"></span>
             </div>
         </footer>
         <script src="./js/date.js"></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>

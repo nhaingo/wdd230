@@ -1,0 +1,90 @@
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    border: #104911;
+    border-style: double;
+    position: relative;      
+}
+.headings {
+    display:flex;
+    justify-content: space-between;
+}
+header img {
+		width: 100%;
+	}
+
+header {
+	justify-content:center;
+	margin: 0 auto;
+    background-color: #104911;
+}
+
+#site-logo {
+        width:5em;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+	    height: auto;    
+}
+#site-name{
+    color:antiquewhite;
+    font-size: 1.5rem;
+    font-family: 'Otomanopee One', sans-serif;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px
+}
+
+.social img {
+    width: 20px;
+    height: auto;
+    justify-items: right;
+    margin-right:0.2em;
+    }
+nav a{
+    text-decoration: none ;
+    font-size: 10px ;
+    font-family: 'Otomanopee One', sans-serif;;
+    color:antiquewhite
+}
+nav ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    display:none;
+    
+}
+nav button {
+    margin:0.2rem 2vw;
+    background-color: whitesmoke;
+    border: none;
+    font-size: 2rem;
+    margin-top: 0.5em;
+}
+nav ul li a{
+    display:block;
+    padding:.8rem 2vw;
+    text-decoration: none;
+
+}
+nav ul li.active a{
+    color:#F9A620;
+}
+nav ul li a:hover{
+    color: black ;
+}
+nav ul.open {
+    display:block;
+}
+#hamburgerBtn span:nth-child(1) {
+    display:block;
+}
+#hamburgerBtn span:nth-child(2) {
+    display:none;
+}
+#hamburgerBtn.open span:nth-child(1) {
+    display:none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+    display:block;
+}
