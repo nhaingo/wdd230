@@ -1,4 +1,4 @@
-@media only screen and (min-width: 34rem){
+@media only screen and (min-width: 760px){
     body{
         max-width: 1080px;
     
@@ -23,10 +23,6 @@
 		margin-right:0;
 	}
     /*main*/
-    main{
-        display:grid;
-        grid-template-columns: repeat(4 1fr);
-    }
     .container,
     .container1 {
         grid-column: 1/4;
