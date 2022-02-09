@@ -1,11 +1,10 @@
-@media only screen and (min-width: 35rem){
+@media only screen and (min-width: 34rem){
     body{
         max-width: 1080px;
+    
     }
-
+    /*header*/
     .social{
-        margin-top:30px;
-        margin-right:0px;   
     }
     nav ul li a{
 		padding:2rem 1rem;
@@ -13,7 +12,7 @@
 	}
 
     #site-logo {
-		width:8em;
+		width:6em;
         padding-left: 10px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -23,3 +22,69 @@
 		width: 3em;
 		margin-right:0;
 	}
+    /*main*/
+    main{
+        display:grid;
+        grid-template-columns: repeat(4 1fr);
+        background-color: aqua;
+    }
+    .container,
+    .container1 {
+        grid-column: 1/4;
+    }
+    .container5{
+        grid-row: 3;
+        grid-column: 1/4;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:10px;
+    }
+    .container5 div{
+        padding:8rem;
+        
+    }
+    .container4{
+        display: grid;
+        grid-row:4;
+        grid-column: 1/4;
+    }
+    
+    .container2{
+        grid-row:5;
+        grid-column: 1/3;
+        margin-right:0px;
+        
+    }
+    .container3 {
+        grid-row:5;
+        margin-left:0px;
+    }
+    /*footer*/
+    footer {
+        text-align: left;
+
+    }
+    #signature-base{
+        display:none;
+    }
+    #signature-medium {
+        display:block;
+        border-top: 1px solid whitesmoke;
+        text-align:center;
+    }
+    .address-contact {
+        justify-content: space-between;
+    }
+    #site-logo-footer img {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .address-contact {
+        display:flex;
+    }
+    #contact{
+        display: flex;
+        flex-direction: column;  
+    }
+}

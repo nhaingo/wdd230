@@ -1,12 +1,11 @@
 body {
-    max-width: 900px;
+    max-width: 600px;
     margin: 0 auto;
-    border: #104911;
-    border-style: double;
-    position: relative;      
 }
+/*header*/
 .headings {
-    display:flex;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 header img {
@@ -14,7 +13,6 @@ header img {
 	}
 
 header {
-	justify-content:center;
 	margin: 0 auto;
     background-color: #104911;
 }
@@ -27,25 +25,27 @@ header {
 	    height: auto;    
 }
 #site-name{
+    display:flex;
     color:antiquewhite;
     font-size: 1.5rem;
     font-family: 'Otomanopee One', sans-serif;
-    font-weight: bold;
-    padding-left: 20px;
-    padding-top: 10px
+    margin-left:20px;
 }
 
 .social img {
-    width: 20px;
+    width: 25px;
     height: auto;
-    justify-items: right;
-    margin-right:0.2em;
+    margin-top: 20px;
     }
 nav a{
     text-decoration: none ;
     font-size: 10px ;
     font-family: 'Otomanopee One', sans-serif;;
-    color:antiquewhite
+    color:antiquewhite;
+    border: 1px solid #ffd449;
+    background-color: #257705;
+    padding:0;
+    
 }
 nav ul{
     list-style-type:none;
@@ -71,7 +71,7 @@ nav ul li.active a{
     color:#F9A620;
 }
 nav ul li a:hover{
-    color: black ;
+    color: #F9A620 ;
 }
 nav ul.open {
     display:block;
@@ -87,4 +87,90 @@ nav ul.open {
 }
 #hamburgerBtn.open span:nth-child(2) {
     display:block;
+}
+.date {
+    grid-row:2;
+    background-color: #257705;
+    padding:10px;
+    text-align:center;
+    color:antiquewhite;
+    font-family: Montserrat,sans-serif;
+}
+/*main*/
+main{
+    display:grid;
+    grid-template-rows: repeat(1fr 5);
+    grid-gap: 10px;
+    padding-top: 20px;
+}
+.container,
+.container1,
+.container2,
+.container3,
+.container4,
+.container5{
+    padding: 80px;
+    background-color: #ffd449;
+    border: 1px solid #104911;
+    margin-left:20px;
+    margin-right:20px;
+    font-family: Montserrat,sans-serif;
+}
+.container4{
+   display:none;
+}
+.container5{
+    padding:20px;
+}
+.container5 div{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border:#104911;
+    border: 1px solid #104911;
+    padding:40px;
+   
+}
+.container5 div#spot3{
+    display:none;
+}
+/*footer*/
+footer{
+    background-color: #104911;
+    margin-top: 20px;
+    color:antiquewhite;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+footer p {
+    margin:0px;
+}
+.location a {
+    text-decoration: none;
+    color:antiquewhite;
+}
+#site-logo-footer img {
+    margin-top:20px;
+    width:7rem;
+    height:auto;
+    padding-left: 30px;
+    margin-right: 30px;
+}
+
+#signature-base {
+    margin-top: 10px;
+    border-top: 1px solid whitesmoke;
+    margin-bottom: 30px;
+}
+.m {
+    margin-top: 20px;
+ }
+#contact{
+    margin-top: 20px;
+}
+#signature-medium {
+    display:none;
+}
+#signature-large{
+    display: none;
 }
