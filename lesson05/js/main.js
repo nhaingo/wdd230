@@ -13,7 +13,7 @@ button.addEventListener('click', function() {
     chaptlist.appendChild(text);
     text.textContent = mychapt;
     chaptlist.appendChild(btn);
-    btn.textContent = 'Delete';
+    btn.textContent = 'X';
     list.appendChild(chaptlist);
 
     btn.onclick = function(e) {
