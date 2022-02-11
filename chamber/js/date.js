@@ -15,4 +15,15 @@ const datefield = document.querySelector(".date");
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(currentDate);
 // long, medium, short options ... try them
 
-datefield.innerHTML = `<em>${fulldate}</em>`;
+datefield.innerHTML = `<em>${fulldate}</em>`
+
+/*const banner= document.querySelector(".banner");
+function display() {
+    let day = 
+}*/
+const banner= document.querySelector(".banner");
+const options = { weekday: 'long'};
+const bday = new Intl.DateTimeFormat('en-US', options).format(currentDate);
+if (bday == "Friday" || bday == "Tuesday") {
+    banner.innerHTML = `<em>${'🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.'}</em>`;
+}

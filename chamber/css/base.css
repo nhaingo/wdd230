@@ -82,7 +82,7 @@ nav ul li a{
 nav ul li.active a{
     color:#F9A620;
 }
-nav ul li a:hover{
+nav ul li a:hover {
     color: #F9A620 ;
 }
 nav ul.open {
@@ -107,7 +107,6 @@ nav ul.open {
     display:block;
 }
 .date {
-    grid-row:2;
     background-color: #257705;
     padding:10px;
     text-align:center;
@@ -117,6 +116,15 @@ nav ul.open {
     margin-right:10px;
     padding: 0.5rem;
     border-radius: 1rem;
+}
+.banner {
+    color:antiquewhite;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    font-family: Montserrat,sans-serif;
+    margin-bottom: 10px;
+
 }
 /*main*/
 main{
