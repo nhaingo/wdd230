@@ -1,27 +1,48 @@
-@media only screen and (min-width: 760px){
+@media only screen and (min-width: 650px){
     body{
         max-width: 1080px;
     
     }
     /*header*/
-    .social{
+    nav ul.open {
+        display:block;
+        position:fixed;
+        text-align: center;
+        top: 12rem;
+        left: 38rem;
+        height: inherit;
     }
     nav ul li a{
 		padding:2rem 1rem;
-		font-size: 14px;
+		font-size: 12px;
 	}
+    nav button {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /*#hamburgerBtn span:nth-child(1) {
+        margin-right: 40px;
+    
+    }*/
 
     #site-logo {
-		width:6em;
+		width:8em;
         padding-left: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
 	    height: auto;  
+	}
+    #site-logo img {
+		width:7em; 
 	}
     .social a img{
 		width: 3em;
-		margin-right:0;
 	}
+    #site-name{
+        font-size:1.5rem;
+        font-family: 'Otomanopee One', sans-serif;
+    }
     /*main*/
     .container,
     .container1 {
@@ -53,6 +74,9 @@
     .container3 {
         grid-row:5;
         margin-left:0px;
+    }
+    .container3 img {
+        width: 35%;
     }
     /*footer*/
     footer {

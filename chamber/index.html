@@ -22,30 +22,41 @@
         <header>
             <div class="banner"></div>
             <div class="headings">
-                <div id="site-logo">
-                    <a href="index.html"><img src="./images/greenfingers.jpg" alt="Image of Green'Fingers logo"></a>
-                </div>
-                <h1 id="site-name">Green'Fingers<br>Chamber</h1>  
-                <div class="social">
-                    <a id="fb" href="https://facebook.com/"><img src="./images/facebook.png" alt="facebook logo"></a>
-                    <a id="in" href="https://linkedin.com/"><img src="./images/linkedin.jpg" alt="Linkedin logo"></a>
-                </div>
-                <nav>
-                    <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-                    <ul id="primaryNav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Board Members</a></li>
-                    </ul>
-                </nav>
+                <section id="logo">
+                    <div id="site-logo">
+                        <a href="index.html"><img src="./images/greenfingers.jpg" alt="Image of Green'Fingers'logo"></a>
+                    </div>
+                    <h1 id="site-name">Green'Fingers<br>Chamber</h1> 
+                </section> 
+                <section id="navigation">
+                    <nav>
+                        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                        <ul id="primaryNav">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li><a href="#">Board Members</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social">
+                        <a id="fb" href="https://facebook.com/"><img src="./images/facebook.png" alt="facebook logo"></a>
+                        <a id="in" href="https://linkedin.com/"><img src="./images/linkedin.png" alt="Linkedin logo"></a>
+                    </div>
+                </section> 
             </div>
             <div class="date"></div>
         </header>
         <main>
             <div class="container">
-                Hero image and call to action
+                <h3>Hero site same and call to action</h3>
+                <picture class="hero">
+                    <picture class="hero-image">
+                        <source media="(min-width:600px) and (max-width: 919.99px)" srcset="images/hero700.jpg">
+                        <source media="(min-width: 920px)" srcset="images/hero1000.jpg">
+                        <img src="images/hero500.jpg" alt="">
+                    </picture>
+                </picture>
             </div>
             <div class="container1">
                 News release
@@ -55,7 +66,16 @@
                 Event
             </div>
             <div class="container3">
-                Weather
+                <h3>Weather</h3>
+                <div class="wea">
+                    <img src="./images/weather.png" alt="weather logo">
+                    <p><span id="temperature">28</span>°C</p>
+                </div>
+                <p>Partly Cloudy</p>
+                <p>Wind Speed: <span id="speed">11</span>km/h</p>
+                <p id="windchill">Wind Chill: 11km/h</p>
+
+                </div>
             </div>
             <div class="container4">                
                 Join
@@ -70,7 +90,7 @@
         <footer>
             <div class="address-contact">
                 <div id="site-logo-footer">
-                    <a href="index.html"><img src="./images/greenfingers.jpg" alt="Image of Green'Fingers logo"></a>
+                    <a href="index.html"><img src="images/greenfingers.jpg" alt="Image of Green'Fingers logo"></a>
                 </div>
                 <div class="site-name-footer">
                     <h3>Green'Fingers Chamber</h3>
