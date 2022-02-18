@@ -24,19 +24,19 @@
             <div class="headings">
                 <section id="logo">
                     <div id="site-logo">
-                        <a href="index.html"><img src="./images/greenfingers.jpg" alt="Image of Green'Fingers'logo"></a>
+                        <a href="index.html"><img src="./images/greenfingers.webp" alt="Image of Green'Fingers'logo"></a>
                     </div>
                     <h1 id="site-name">Green'Fingers<br>Chamber</h1> 
-                </section> 
-                <section id="navigation">
-                    <nav>
+                <!-- /section> 
+                <section id="navigation"> -->
+                    <nav> 
                         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                         <ul id="primaryNav">
                             <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="discover.html">Discover</a></li>
+                            <li><a href="#">Directory</a></li>
+                            <li><a href="#">Join</a></li>
                             <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Board Members</a></li>
                         </ul>
                     </nav>
                     <div class="social">
@@ -52,30 +52,28 @@
                 <h3>Hero site same and call to action</h3>
                 <picture class="hero">
                     <picture class="hero-image">
-                        <source media="(min-width:600px) and (max-width: 919.99px)" srcset="images/hero700.jpg">
-                        <source media="(min-width: 920px)" srcset="images/hero1000.jpg">
+                        <source media="(min-width:650px) and (max-width: 63.99rem)" srcset="images/hero700.jpg">
+                        <source media="(min-width: 64rem)" srcset="images/hero1000.jpg">
                         <img src="images/hero500.jpg" alt="">
                     </picture>
                 </picture>
             </div>
             <div class="container1">
                 News release
-
             </div>
             <div class="container2">
                 Event
             </div>
             <div class="container3">
-                <h3>Weather</h3>
+                <h4>Weather</h4>
                 <div class="wea">
                     <img src="./images/weather.png" alt="weather logo">
-                    <p><span id="temperature">28</span>°C</p>
+                    <p><span id="temperature">32</span> °C</p>
                 </div>
                 <p>Partly Cloudy</p>
-                <p>Wind Speed: <span id="speed">11</span>km/h</p>
-                <p id="windchill">Wind Chill: 11km/h</p>
-
-                </div>
+                <hr>
+                <p>Wind Speed: <span id="speed">15</span> km/h</p>
+                <p>Wind Chill: <span id="windchill"></span> °C</p>
             </div>
             <div class="container4">                
                 Join
@@ -90,7 +88,7 @@
         <footer>
             <div class="address-contact">
                 <div id="site-logo-footer">
-                    <a href="index.html"><img src="images/greenfingers.jpg" alt="Image of Green'Fingers logo"></a>
+                    <a href="index.html"><img src="images/greenfingers.webp" alt="Image of Green'Fingers logo"></a>
                 </div>
                 <div class="site-name-footer">
                     <h3>Green'Fingers Chamber</h3>
@@ -132,5 +130,6 @@
         </footer>
         <script src="./js/date.js"></script>
         <script src="./js/main.js"></script>
+        <script src="./js/windchill.js"></script>
     </body>
 </html>

@@ -4,16 +4,14 @@
 		max-width: 1700px;
 	}
 	header #navigation {
-		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
 	}
-
-	#site-name {
+	/*#site-name {
 		font-size: 36px;
 		padding-top:20px;
 	}
-	#site-logo {
+	/*#site-logo {
         width:10rem;
         padding-left: 20px;
 	    height: auto; 
@@ -21,15 +19,16 @@
 	}
 	#site-logo img{
         width:9rem;
-}
+}*/
 	nav ul li a{
+		grid-column: 1;
 		padding: 1rem;
 		font-size: 16px;
 		justify-content: center;
 		border:none;
 		background-color: transparent;
 	}
-	.social a img{
+	.social a img {
 		display:inline-flex;
 		width:20%;
 		margin-left: 20px;
@@ -47,9 +46,11 @@
 		font-size: 20px;
 		font-family: Montserrat,sans-serif;
 	}
+	/*main*/
 	main{ 
 		display:grid;
 		grid-template-columns: repeat(4 1fr);
+		grid-gap:10px;
 	}
 	.container2{
 		grid-column:1;
