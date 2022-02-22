@@ -14,7 +14,7 @@ main {
     grid-template-columns: 1fr;
     justify-items: center;
     grid-gap: 5px;
-    padding:20px
+    padding:50px 0;
 }
 
 picture img[data-src] {

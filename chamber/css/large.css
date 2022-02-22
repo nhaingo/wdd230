@@ -105,6 +105,12 @@
 		min-height: 12rem;
     	height: 100%;
 	}
+	/*discover main*/
+	.discover section{
+		display:grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: center;
+	}
 	/*footer*/
 	#signature-large {
 		display:block;

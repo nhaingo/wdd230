@@ -43,6 +43,12 @@
         font-size:1.5rem;
         font-family: 'Otomanopee One', sans-serif;
     }
+    .date{
+        font-size: 18px;
+    }
+    .banner {
+        font-size: 18px;
+    }
     /*main*/
     .container,
     .container1 {

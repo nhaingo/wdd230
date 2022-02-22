@@ -26,4 +26,5 @@ const options = { weekday: 'long'};
 const bday = new Intl.DateTimeFormat('en-US', options).format(currentDate);
 if (bday == "Monday" || bday == "Tuesday") {
     banner.innerHTML = `<em>${'🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.'}</em>`;
+    
 }
