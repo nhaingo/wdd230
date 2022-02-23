@@ -239,6 +239,27 @@ h3 {
     text-align: center;
     font-family: 'Otomanopee One', sans-serif;;
 }
+.discover p{
+    font-size: 14px;
+
+}
+.discover main section img {
+    width:50%;
+}
+.discover section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:10px;
+}
+.discover main #airport,
+#farm, #ravinala, 
+#municipality, #mining {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 10px;
+	background-color:#ff7f11;
+}
 /*footer*/
 footer{
     background-color: #104911;

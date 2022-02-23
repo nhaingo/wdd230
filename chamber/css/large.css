@@ -106,11 +106,24 @@
     	height: 100%;
 	}
 	/*discover main*/
-	.discover section{
-		display:grid;
-		grid-template-columns: repeat(3, 1fr);
-		justify-content: center;
+	.discover{
+		max-width:auto;
 	}
+	.discover section{
+		margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin-bottom: 30px;
+        grid-gap: 20px;
+	}
+	.discover main section img {
+		width:100%;
+
+	}
+	.discover main section img: hover{
+		
+	}
+
 	/*footer*/
 	#signature-large {
 		display:block;
