@@ -84,6 +84,11 @@
     .container3 img {
         width: 35%;
     }
+    /*discover page*/
+    .discover section {
+        grid-template-columns: 1fr 1fr;
+        grid-gap:5px;
+    }
     /*footer*/
     footer {
         text-align: left;

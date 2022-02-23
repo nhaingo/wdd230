@@ -139,13 +139,7 @@ nav #hamburgerBtn span{
 
 }
 /* discover ==> header*/
-.visits{
-    background-color: #257705;
-    padding:8px;
-    font-family: Montserrat,sans-serif;
-    font-size: 14px;
-    text-align: center;
-} 
+
 .discover p{
     font-family: Montserrat,sans-serif;
 }
@@ -234,6 +228,12 @@ h3 {
 /*discover main*/
 .discover main{
     display: block;
+    max-width: 1300px;
+    margin: 0 auto;
+    border: 10px solid #F9A620;
+    margin-top: 20px;
+    ;
+    text-align: justify;
 }
 .discover h2 {
     text-align: center;
@@ -241,25 +241,44 @@ h3 {
 }
 .discover p{
     font-size: 14px;
+    text-align:center;
 
 }
 .discover main section img {
-    width:50%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.discover main section img:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 .discover section {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap:10px;
+    margin-top:20px;
 }
 .discover main #airport,
 #farm, #ravinala, 
-#municipality, #mining {
+#municipality, #mining,
+#foodretailing, #croc,
+#mall, #marina, #fortress {
     border: 1px solid #ccc;
     padding: 10px;
     box-shadow: 10px 10px 5px black;
     border-radius: 10px;
-	background-color:#ff7f11;
+	background-color:#ffd449;
 }
+.visits{
+    background-color: #257705;
+    padding:8px;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+} 
 /*footer*/
 footer{
     background-color: #104911;
