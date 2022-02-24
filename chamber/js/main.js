@@ -43,14 +43,14 @@ else {
     });
 }
 /*number of visits*/
-const visitsCount = document.querySelector(".visits");
+const visitsCount = document.querySelector("#visits");
 
 // get the stored value in localStorage
 let visits = Number(window.localStorage.getItem("visits-ls"));
 
 // determine if this is the first visit or display the number of visits.
 if (visits !== 0) {
-	visitsCount.textContent = `Number of visits: ${visits}`;
+	visitsCount.textContent = visits;
 } else {
 	visitsCount.textContent = `This is your first visit!`;
 }
