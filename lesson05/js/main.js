@@ -15,11 +15,9 @@ button.addEventListener('click', function() {
     chaptlist.appendChild(btn);
     btn.textContent = 'X';
     list.appendChild(chaptlist);
-
     btn.onclick = function(e) {
         list.removeChild(chaptlist);
     };
-
     input.focus();
 }
 )
