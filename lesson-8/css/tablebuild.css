@@ -12,10 +12,9 @@ caption{
     color: black;
     background-color: rgb(180, 101, 245);
     box-shadow: 10px 10px 20px rgb(193, 123, 240);
-    font-size: 0.7rem;
-    padding:15px;
+    font-size: 0.9rem;
+    padding:10px;
     border: 1px solid rgb(141, 141, 141);
-    font-weight: bold;
 }
 thead tr:nth-child(1) {
 	background-color:rgb(180, 101, 245);
