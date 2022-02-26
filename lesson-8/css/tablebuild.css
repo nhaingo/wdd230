@@ -7,15 +7,6 @@ table{
     font-family:'Ubuntu', sans-serif;;
     margin:10px auto;
 }
-caption{
-    caption-side: bottom;
-    color: black;
-    background-color: rgb(180, 101, 245);
-    box-shadow: 10px 10px 20px rgb(193, 123, 240);
-    font-size: 0.9rem;
-    padding:10px;
-    border: 1px solid rgb(141, 141, 141);
-}
 thead tr:nth-child(1) {
 	background-color:rgb(180, 101, 245);
 	font-size: 24px;
@@ -30,6 +21,8 @@ th, td, tr{
     
     border: 1px solid rgb(141, 141, 141);
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     
 }
 
@@ -42,4 +35,6 @@ tbody .special-cell {
 tbody .it {
     font-style: italic;
 }
-
+tfoot{
+    font-size: 0.8rem;
+}
