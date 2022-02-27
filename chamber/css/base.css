@@ -155,7 +155,7 @@ main{
     display: grid;
     grid-gap: 5px;
     padding-top: 10px;
-    margin:0;
+    margin:10px auto;
 }
 main img{
     width:100%;
@@ -195,6 +195,7 @@ main .container .hero {
 h3 {
     text-align: center;
     text-decoration:underline;
+    font-family: 'Otomanopee One', sans-serif;;
 }
 .container3 .wea, p{
     margin:0.2rem;
@@ -232,7 +233,8 @@ h3 {
     margin: 0 auto;
     border: 10px solid #F9A620;
     margin-top: 20px;
-    ;
+    padding-left: 10px;
+    padding-right: 15px;
     text-align: justify;
 }
 .discover h2 {
@@ -264,15 +266,20 @@ h3 {
 #farm, #ravinala, 
 #municipality, #mining,
 #foodretailing, #croc,
-#mall, #marina, #fortress {
+#mall, #marina, #fortress, #mining1 {
     border: 1px solid #ccc;
     padding: 10px;
     box-shadow: 10px 10px 5px black;
     border-radius: 10px;
 	background-color:#ffd449;
 }
+.discover main #mining{
+    margin-bottom: 10px;
+}
+.discover #mining1 {
+    display: none;
+}
 .numbvisits{
-    background-color: #257705;
     padding:8px;
     font-family: Montserrat,sans-serif;
     font-size: 14px;

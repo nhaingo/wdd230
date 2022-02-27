@@ -51,6 +51,8 @@
 		display:grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap:10px;
+		max-width: 1200px;
+		margin: 10px auto
 	}
 	.container2{
 		grid-column:1;
@@ -106,6 +108,9 @@
     	height: 100%;
 	}
 	/*discover main*/
+	main #district{
+		margin: 20px;
+	}
 	.discover {
 		max-width:auto;
 	}
@@ -118,6 +123,16 @@
 	}
 	.discover main section img {
 		width:100%;
+	}
+	discover section #mining{
+		position: relative;
+		grid-row:3;
+	}
+	.discover #mining {
+		display: none;
+	}
+	.discover #mining1 {
+		display: block;
 	}
 	/*footer*/
 	#signature-large {
