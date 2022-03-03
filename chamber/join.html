@@ -36,6 +36,7 @@
                             <li><a href="#">Directory</a></li>
                             <li class="active"><a href="join.html">Join</a></li>
                             <li><a href="#">Contact Us</a></li>
+                            
                         </ul>
                     </nav>
                     <div class="social">
@@ -48,6 +49,78 @@
             <div class="date"></div>
         </header>
         <main>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <h4 class="form">Join Green'Fingers Chamber: Fill in the Form</h4>
+                    <legend>Applicant Information</legend>
+                    <label class="field">First Name* <input type="text" name="fname" placeholder="First Name" required></label>
+                    <label class="field">Last Name* <input type="text" name="lname" placeholder="Last Name" required></label>
+                    <label class="field">Business Position <input type="text" name="business" pattern="^[A-zÀ-ž\s\-]{7,}$"placeholder="Title" required></label>
+                    <label class="field">Email Address* <input type="email" name="email" placeholder="user@email.org" required></label>
+                    <label class="field">Phone Number*<input type="tel" name="phone" placeholder="### ## ### ##" pattern="^[0-9\+\s]{10,17}$" required></label>
+                    <label class="field">Business Name<input type="text" name="busname" placeholder="" required></label>
+                    <div id="membershiplevel">
+                        <!--<div>
+                            <label class="mbr">
+                                <input id="free "type="radio" name="membership">NP Membership
+                            </label>
+                            <label class="mbr">
+                                <input id="bronze"type="radio" name="membership">Bronze Membership
+                            </label>
+                            <label class="mbr">
+                                <input id="Silver"type="radio" name="membership">Silver Membership
+                            </label>
+                            <label class="mbr">
+                                <input id="gold"type="radio" name="membership">Gold Membership
+                            </label>
+                        </div>-->
+                        <div class="benefit">
+                        </div>
+                        <div>
+                            <label class="mbr "for="membership">Membership Level:</label>
+                            <select name="membership" id="membership-select">
+                                <option value=""disabled selected>--Please choose an option--</option>
+                                <option id="fr" value="free">NP Membership</option>
+                                <option id="bro" value="bronze">Bronze Membership</option>
+                                <option id="sil" value="silver">Silver Membership</option>
+                                <option id="gol" value="gold">Gold Membership</option>
+                            </select>
+                        </div>
+                        <div class="benefits">
+                            
+                            <table>
+                                <tr>
+                                    <th id="fee">Membership Fee:</th>
+                                </tr>
+                                <tr>
+                                    <th>Benefits:</th>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td id="freembr"><ul>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td id="bronzembr"><ul></ul></td>
+                                </tr>
+    
+                                <tr>
+                                    <td></td>
+                                    <td id="silvermbr"><ul></ul></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td id="goldmbr"><ul></ul></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <label class="field">Business Description <textarea name="description" rows="4" cols="50"></textarea></label>
+                    </div>
+                </fieldset>
+            </form>
+
 
         </main>
         <footer>
