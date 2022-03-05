@@ -10,6 +10,7 @@ h1{
     font-size: 36px;
     color: rgb(55, 55, 162);
     text-shadow: 0px 10px 10px rgb(86, 88, 158);
+    margin-bottom: 2rem;
     
 }
 footer {
@@ -57,6 +58,6 @@ footer p{
 	max-width: 350px;
     box-shadow: 0 0 30px #777;
     height: 300px;
-    border: 1px solid #333;
+    border: 1px solid white;
   }
   
