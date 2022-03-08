@@ -341,3 +341,20 @@ footer p {
 #signature-large{
     display: none;
 }
+/*wireframe page*/
+#wf{
+    max-width:600px;
+    margin: auto;
+    align-items: center;
+}
+h4 {
+    font-family: 'Otomanopee One', sans-serif;
+    text-align: center;
+}
+#wf h2{
+    font-family: 'Otomanopee One', sans-serif;
+    text-align: center;
+}
+.wireframe img{
+    width:100%
+}
