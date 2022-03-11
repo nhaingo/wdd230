@@ -1,11 +1,20 @@
 const apiURL = "http://api.openweathermap.org/data/2.5/forecast?q=Fairbanks&units=imperial&appid=d921f126e62ef280771adf266dfddd5a";
-fetch(requestURL)
+fetch(apiURL)
     .then(function (response) {
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject); 
-        document.querySelector('#current-temp').textContent = jsonObject.main.temp;
+        console.log(jsonObject); 
+        const weatherTemp = jsonObject.main.temp;
+        const currentTemp = document.querySelector('#current-temp');
+
+        currentTemp.textContent = weatherTemp;
+
+    });
+    
+
+    
+
 
         /*const iconsrc= `https://openweathermap.org/img/w/${jsonObject.weather[0].icon}.png`;
         const desc = jsObject.weather[0].description;
@@ -13,5 +22,5 @@ fetch(requestURL)
         document.querySelector('#weathericon').setAttribute('src', iconsrc);
         document.querySelector('#weathericon').setAttribute('alt', desc);
         document.querySelector('figcaption').textContent = desc;*/
-  });
+
   
