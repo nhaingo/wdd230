@@ -19,9 +19,3 @@ fetch(apiURL)
         document.querySelector('figcaption').textContent = desc;
 
     });
-    
-
-    
-
-
-  
