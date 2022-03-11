@@ -1,0 +1,24 @@
+body {
+    margin:auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 600px;
+    border: 2px solid rgb(60, 59, 59);
+    margin-top: 30px;
+    box-shadow: 0 0 30px;
+}
+h1 {
+    color:aliceblue;
+    background-color: blue;
+}
+main {
+    text-align: center;
+}
+figcaption {
+    color:blue;
+}
+#icon-src{
+    color:rgb(241, 23, 23);
+}
+p {
+    font-size: 18px;
+}

@@ -8,19 +8,20 @@ fetch(apiURL)
         const weatherTemp = jsonObject.main.temp;
         const currentTemp = document.querySelector('#current-temp');
 
-        currentTemp.textContent = weatherTemp;
+        currentTemp.textContent = weatherTemp.toFixed(1);
+        const iconsrc= `https://openweathermap.org/img/w/${jsonObject.weather[0].icon}.png`;
+        const desc = jsonObject.weather[0].description;
+        
+        
+        document.querySelector('#icon-src').textContent = iconsrc;
+        document.querySelector('#weathericon').setAttribute('src', iconsrc);
+        document.querySelector('#weathericon').setAttribute('alt', desc);
+        document.querySelector('figcaption').textContent = desc;
 
     });
     
 
     
 
-
-        /*const iconsrc= `https://openweathermap.org/img/w/${jsonObject.weather[0].icon}.png`;
-        const desc = jsObject.weather[0].description;
-        document.querySelector('#icon-src').textContent = iconsrc;
-        document.querySelector('#weathericon').setAttribute('src', iconsrc);
-        document.querySelector('#weathericon').setAttribute('alt', desc);
-        document.querySelector('figcaption').textContent = desc;*/
 
   
