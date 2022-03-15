@@ -33,9 +33,9 @@
                         <ul id="primaryNav">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="discover.html">Discover</a></li>
-                            <li><a href="#">Directory</a></li>
+                            <li><a href="directory.html">Directory</a></li>
                             <li class="active"><a href="join.html">Join</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                             
                         </ul>
                     </nav>
@@ -49,31 +49,20 @@
             <div class="date"></div>
         </header>
         <main>
+            <h4 class="mbpersonal">Join Green'Fingers Chamber: Fill in the Form</h4>
             <form method="get" action="thankyou.html">
                 <fieldset>
-                    <h4 class="form">Join Green'Fingers Chamber: Fill in the Form</h4>
-                    <legend>Applicant Information</legend>
+                    <legend>Personal Information</legend>
                     <label class="field">First Name* <input type="text" name="fname" placeholder="First Name" required></label>
                     <label class="field">Last Name* <input type="text" name="lname" placeholder="Last Name" required></label>
-                    <label class="field">Business Position <input type="text" name="business" pattern="^[A-zÀ-ž\s\-]{7,}$"placeholder="Title" required></label>
+                    <label class="field">Business Position <input type="text" name="business" pattern="^[A-zÀ-ž\s\-]{7,}$"placeholder="Title"></label>
                     <label class="field">Email Address* <input type="email" name="email" placeholder="user@email.org" required></label>
-                    <label class="field">Phone Number*<input type="tel" name="phone" placeholder="### ## ### ##" pattern="^[0-9\+\s]{10,17}$" required></label>
-                    <label class="field">Business Name<input type="text" name="busname" placeholder="" required></label>
+                    <label class="field">Phone Number*<input type="tel" name="phone" placeholder="xxx xx xxx xx" pattern="^[0-9\+\s]{10,17}$" required></label>
+                    <label class="field">Business Name*<input type="text" name="busname" placeholder="" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Information</legend>
                     <div id="membershiplevel">
-                        <!--<div>
-                            <label class="mbr">
-                                <input id="free "type="radio" name="membership">NP Membership
-                            </label>
-                            <label class="mbr">
-                                <input id="bronze"type="radio" name="membership">Bronze Membership
-                            </label>
-                            <label class="mbr">
-                                <input id="Silver"type="radio" name="membership">Silver Membership
-                            </label>
-                            <label class="mbr">
-                                <input id="gold"type="radio" name="membership">Gold Membership
-                            </label>
-                        </div>-->
                         <div class="benefit">
                         </div>
                         <div>
@@ -85,44 +74,72 @@
                                 <option id="sil" value="silver">Silver Membership</option>
                                 <option id="gol" value="gold">Gold Membership</option>
                             </select>
+                            <section id="npmember">
+                                <div><h5>NP Member Benefits</h5>
+                                    <p>Membership Annual Fee: Free*</p>
+                                    <ul>
+                                        <li>Business listed on Chamber Website & annual Print magazine/directory</li>
+                                        <li>Monthly e-Newsletter</li>
+                                        <li>Eligibility to host a Chamber mixer</li>
+                                        <li>One registration to Chamber Launch</li>
+                                        <li>Access to local business information</li>
+                                        <li>Free Ribbon Cutting and Open House Events (by request)</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section id="brmember">
+                                <div><h5>Bronze Member Benefits</h5>
+                                    <p>Membership Annual Fee: 195 000 MGA</p>
+                                    <ul>
+                                        <li>Business listed on Chamber Website & annual Print magazine/directory</li>
+                                        <li>Monthly e-Newsletter</li>
+                                        <li>Eligibility to host a Chamber mixer</li>
+                                        <li>One registration to Chamber Launch</li>
+                                        <li>Access to local business information</li>
+                                        <li>Access to other organizations locally or internationally affiliated to the chamber of commerce</li>
+                                        <li>Invitations to Green'Fingers programs including training and workshops</li>
+                                        <li>Free Ribbon Cutting and Open House Events (by request)</li>
+                                        <li>Mailing List Access</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section id="silmember">
+                                <div><h5>Silver Member Benefits</h5>
+                                    <p>Membership Annual Fee: 295 000 MGA</p>
+                                    <ul>
+                                        <li>All of Bronze members benefits</li>
+                                        <li>Facebook share of your business page (once annually)</li>
+                                        <li>Facebook share your business events (unlimited)</li>
+                                        <li>Discounts on Events</li>
+                                        <li>Business Referrals</li>
+                                        <li>Sponsorship and Promotional Opportunities</li>
+                                        <li>Invitations to Green'Fingers programs including training and workshops</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section  id="golmember">
+                                <div><h5>Gold Member Benefits</h5>
+                                    <p>Membership Annual Fee: 395 000 MGA</p>
+                                    <ul>
+                                        <li>All of Silver members benefits</li>
+                                        <li>Access to information on local economic development opportunities</li>
+                                        <li>50% off Advertising with the Green'Fingers Chamber</li>
+                                        <li>120 Days of Banner Ad space</li>
+                                        <li>Participation in our Member Spotlight of the Week program</li>
+                                        <li>Sponsorship and Promotional Opportunities</li>
+                                        <li>Invitations to Green'Fingers programs including training and workshops</li>
+                                    </ul>
+                                </div>
+                            </section>
                         </div>
-                        <div class="benefits">
-                            
-                            <table>
-                                <tr>
-                                    <th id="fee">Membership Fee:</th>
-                                </tr>
-                                <tr>
-                                    <th>Benefits:</th>
-                                    <td> </td>
-                                </tr>
-                                <tr>
-                                    <td> </td>
-                                    <td id="freembr"><ul>
-                                    </ul></td>
-                                </tr>
-                                <tr>
-                                    <td> </td>
-                                    <td id="bronzembr"><ul></ul></td>
-                                </tr>
-    
-                                <tr>
-                                    <td></td>
-                                    <td id="silvermbr"><ul></ul></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td id="goldmbr"><ul></ul></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <label class="field">Business Description <textarea name="description" rows="4" cols="50"></textarea></label>
-                    </div>
                 </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                        <label class="field">Business Description <textarea name="description" rows="4" cols="50"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Join Green's Fingers" class="submitBtn"> 
             </form>
-
-
-        </main>
+       </main>
         <footer>
             <div class="address-contact">
                 <div id="site-logo-footer">

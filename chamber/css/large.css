@@ -187,5 +187,12 @@
 	#md {
 		display: flex;
 	}
-	
+	 /*directory page*/
+	 .business-cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+	#busdirectory {
+		display: block;
+	}
+
 }

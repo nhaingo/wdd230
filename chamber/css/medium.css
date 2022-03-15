@@ -163,6 +163,26 @@
     #large {
         grid-row: 3;
     }
+    /*join form*/
+    main form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    form fieldset .submitBtn{
+        grid-column: 1;
+        grid-row:3;
+    }
+    /*directory page*/
+    .business-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    #busdirectory section {
+        margin:10px;
+    }
+        
+    }
+
 
 
 }

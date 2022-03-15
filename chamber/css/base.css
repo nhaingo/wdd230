@@ -10,6 +10,7 @@ header {
 	margin: 0 auto;
     padding-bottom:0.2em;
     background-color: #104911;
+    
 }
 
 .headings {
@@ -24,6 +25,7 @@ header img {
 
 header .headings #logo {
     display: flex;
+    margin-top: 10px;
 }
 header #navigation {
     display: flex;
@@ -47,7 +49,7 @@ header #navigation {
     margin-right: 10rem;
 }
 .headings #logo{
-    margin-top: 10px;
+    
 }
 
 .social img {
@@ -289,17 +291,74 @@ h3 {
     font-weight: bold;
 } 
 /*join*/
+form {
+    max-width:400px;
+}
 fieldset {
     background-color:#ffd449 ;
     border:2px solid #104911;
     font-family: Montserrat, sans-serif;
     font-weight: bold;
+    width:100%
 }
 fieldset h4{
     font-family: 'Otomanopee One', sans-serif;
     font-size: 24px;
 }
-
+form .submitBtn {
+    background-color: #257705;
+    padding: 10px;
+    color:antiquewhite;
+    font-size:large;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    
+}
+form fieldset{
+    margin: 0;
+    border: 3px solid rgb(4, 82, 52);
+    border-radius: 10px;
+    max-width: 400px;
+}
+form fieldset textarea{
+    max-width: 390px;
+}
+form fieldset #npmember, #brmember, #silmember, #golmember{
+    border: 2px solid black;
+    margin-top:10px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color:#a7dd91;
+}
+form fieldset h5 {
+    text-align: center;
+    font-size: 24px;
+    background-color: #257705;
+    color:antiquewhite;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+form fieldset p {
+    font-weight: bold;
+    font-size: 18px;
+    font-style: normal;
+}
+form fieldset .field{
+    padding:5px;
+  
+}
+form fieldset .field input{
+    border-radius: 5px;
+    display: block;
+    padding: 0.5rem;
+    width: 95%;
+    margin-bottom: 0.5rem ;
+    margin-top: .2rem;
+}
+form fieldset .field input:required {
+    border: 1px solid red
+}
 /*footer*/
 footer{
     background-color: #104911;
@@ -350,6 +409,7 @@ footer p {
 h4 {
     font-family: 'Otomanopee One', sans-serif;
     text-align: center;
+    
 }
 #wf h2{
     font-family: 'Otomanopee One', sans-serif;
@@ -357,4 +417,48 @@ h4 {
 }
 .wireframe img{
     width:100%
+}
+
+/*directory page*/
+#busdirectory h4{
+    text-align: center;
+    font-size: 20px;
+    
+}
+#busdirectory section{
+  border:2px solid rgb(77, 77, 79);
+  margin-bottom:8px;
+  box-shadow: 10px 0 10px#a1a2a1;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  background-color: #ffd449;
+}
+.dirbuttons{
+    display:block;
+    text-align: center;
+    grid-row:2;
+}
+#busdirectory section p{
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.business-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid: gap 0.2rem;
+    margin: 0 auto;
+    border: 5px solid #F9A620;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: justify;
+    
+}
+.business-cards img{
+    width: 30%;
+    border-radius: 2px;
+    margin-top:0.5rem;
 }
