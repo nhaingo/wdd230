@@ -13,7 +13,7 @@ fetch(requestURL)
     .then(function (jsonObject) {
         console.table(jsonObject); //temporary checking for valid response and data parsing
          //store the results of the converted response into an array since the data source is a neatly packed array of records named "directory"
-        const cards = jsonObject['directory'];
+        const cards = jsonObject.directory;
         cards.forEach(displayCard);
         //loop through every record and process each one into its own 'card' (HTML output), one at a time.
         //using a forEach method (Links to an external site.), define a function named "display" which will be called for each card record in the directory list.
@@ -62,55 +62,3 @@ function displayCard(card) {
   // Add/append the existing HTML div with the cards class with the section(businessCard)
     cards.appendChild(businessCard);
 }
-/* Toggle view from grid to list or  list to grid*/
-// this function will help us to change the view when needed
-function changeView() {
-  const sectionViews = document.querySelectorAll('.views');
-  if(window.innerWidth >= 640 && window.innerWidth < 1024) {
-      sectionViews.forEach( element => {
-          listView(element)
-      })
-  } else {
-      sectionViews.forEach( element => {
-          gridView(element)
-      })
-  }
-}
-
-function listView(element) {
-  listViewButton.classList.add("active");
-  gridViewButton.classList.remove("active");
-  cards.classList.remove("directory-grid-container");
-  cards.classList.add("directory-list-container");
-  element.classList.add("list-display");
-  element.classList.remove("grid-display");
-}
-
-function gridView(element) {
-  gridViewButton.classList.add("active");
-  listViewButton.classList.remove("active");
-  cards.classList.add("directory-grid-container");
-  cards.classList.remove("directory-list-container");
-  element.classList.remove("list-display");
-  element.classList.add("grid-display");
-}
-
-// enable the grid and list views
-
-const gridViewButton = document.getElementById('grid-view');
-const listViewButton = document.getElementById('list-view');
-
-gridViewButton.addEventListener('click',() => {
-  const sections = document.querySelectorAll(".views");
-  sections.forEach(element => {
-      gridView(element)
-  })
-  
-});
-
-listViewButton.addEventListener('click',() => {
-  const sections = document.querySelectorAll(".views");
-  sections.forEach(element => {
-      listView(element)
-  })
-});

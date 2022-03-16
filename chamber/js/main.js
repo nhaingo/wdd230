@@ -43,7 +43,7 @@ else {
     });
 }
 /*number of visits*/
-const visitsCount = document.querySelector("#visits");
+/*const visitsCount = document.querySelector("#visits");
 
 // get the stored value in localStorage
 let visits = Number(window.localStorage.getItem("visits-ls"));
@@ -58,10 +58,9 @@ if (visits !== 0) {
 // increment the number of visits.
 visits++;
 // store the new number of visits value
-localStorage.setItem("visits-ls", visits);
+localStorage.setItem("visits-ls", visits);*/
 
 
-    
 
 
 
