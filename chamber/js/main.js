@@ -42,23 +42,33 @@ else {
         loadImages(img);
     });
 }
-/*number of visits*/
-/*const visitsCount = document.querySelector("#visits");
 
-// get the stored value in localStorage
-let visits = Number(window.localStorage.getItem("visits-ls"));
+/*number of days since last visits*/
+//Get the data of 'last-visit-date' from the local storage and store inside a variable called lastvisit
+const lastvisit = Number(window.localStorage.getItem('last-visit-date'));
+//Initialize a variable to get the id element from the DOM
+const visitsDisplay = document.querySelector("#visits");
 
-// determine if this is the first visit or display the number of visits.
-if (visits !== 0) {
-	visitsCount.textContent = visits;
-} else {
-	visitsCount.textContent = `This is your first visit!`;
+//Set a condition to calculate the number of days between the last visit and the actual date:
+//If the condition is true
+//Display the value of the number of days
+if (lastvisit > 0) {
+    const today = Date.now();
+    let factor = 86400000;
+    let daysBetween = Math.floor(Math.abs(today - lastvisit) / factor);
+
+    visitsDisplay.textContent = 'This is your first visit! Welcome!';
+    
+}  else {  
+    visitsDisplay.textContent = `${daysBetween.toFixed(0)}`;
+
 }
-
-// increment the number of visits.
-visits++;
 // store the new number of visits value
-localStorage.setItem("visits-ls", visits);*/
+localStorage.setItem("last-visit-date", today);
+
+
+
+
 
 
 
