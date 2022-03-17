@@ -56,11 +56,12 @@ if (lastvisit > 0) {
     const today = Date.now();
     let factor = 86400000;
     let daysBetween = Math.floor(Math.abs(today - lastvisit) / factor);
-
-    visitsDisplay.textContent = 'This is your first visit! Welcome!';
+    visitsDisplay.textContent = `${daysBetween.toFixed(0)}`;
+    
     
 }  else {  
-    visitsDisplay.textContent = `${daysBetween.toFixed(0)}`;
+    
+    visitsDisplay.textContent = 'This is your first visit! Welcome!';
 
 }
 // store the new number of visits value
