@@ -1,38 +1,25 @@
 /* Larger viewports */
 @media only screen and (min-width: 64rem) {
 	body{
-		max-width: 1700px;
+		max-width: 1600px;
 	}
 	header #navigation {
-		flex-direction: row;
-		justify-content: flex-end;
+		display:grid;
+		grid-template-columns: 1fr;;
 	}
-	/*#site-name {
-		font-size: 36px;
-		padding-top:20px;
+	#navigation .social {
+		text-align: end;
+		grid-row:1;
 	}
-	/*#site-logo {
-        width:10rem;
-        padding-left: 20px;
-	    height: auto; 
-		padding-bottom: 0px;
+	headings #site-logo a img {
+		margin:0;
+		padding-left:0;
 	}
-	#site-logo img{
-        width:9rem;
-}*/
 	nav ul li a{
-		grid-column: 1;
-		padding: 1rem;
-		font-size: 16px;
-		justify-content: center;
+		padding: 0.8rem;
+		font-size: 14px;
 		border:none;
 		background-color: transparent;
-	}
-	.social a img {
-		display:inline-flex;
-		width:20%;
-		margin-left: 20px;
-		
 	}
 	nav button{
         display: none;
@@ -45,6 +32,7 @@
 	.banner {
 		font-size: 20px;
 		font-family: Montserrat,sans-serif;
+		z-index:1;
 	}
 	/*main*/
 	main{ 
@@ -54,70 +42,69 @@
 		max-width: 1200px;
 		margin: 10px auto
 	}
-	.container2{
+	.event{
 		grid-column:1;
 		grid-row:1;
 		margin-right:0px;
 	}
-	.container3 {
+	.weather {
 		grid-column: 1;
 		grid-row:2;
 		margin-left:20px;
 		margin-right:0px;
 	}
 	
-	.container4 {
+	.join {
 		grid-column: 1;
 		grid-row:3;
 		margin-right:0px;
 	}
-	.container {
+	.hero-section {
 		grid-column: 2/4;
 		grid-row: 1/3;
 		margin:0px;
 	}
-	.container1{
+	.release{
 		grid-column: 2/4;
 		grid-row: 3;
 		margin:0px;
 	}
-	.container5{
+	.spotlights{
 		grid-column: 4;
 		grid-row:1/4;
 		display:grid;
 		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
 		grid-auto-rows: minmax(100px, auto);
         padding: 30px;
 		margin-left:0px;
 		grid-gap:0px;
 		
 	}
-	.container5 div#spot3{
+	.spotlights div#spot3{
 		display:block;
 		grid-row:3;
 		
 	}
-	.container5 div{
+	.spotlights div{
 		border:#104911;
     	border: 1px solid #104911;
         padding: 15px;
 		margin:0px;	
 	}
-	container .hero {
+	.hero-section .hero {
 		min-height: 12rem;
     	height: 100%;
 	}
 	/*discover main*/
-	main #district{
-		margin: 20px;
+	#district{
+		margin: 0;
 	}
-	.discover {
-		max-width:auto;
-	}
-	.discover section{
+	
+	.discover .places{
 		margin: 0 auto;
         grid-template-columns: repeat(3, 1fr);
-        max-width: 1200px;
+        max-width: 980px;
         margin-bottom: 30px;
         grid-gap: 20px;
 	}
@@ -134,6 +121,17 @@
 	.discover #mining1 {
 		display: block;
 	}
+	/*join page*/
+	#join {
+        margin:auto;
+    }
+	
+    #join-benefits #bnfts {
+		display:grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap:.2rem
+	}
+	
 	/*footer*/
 	#signature-large {
 		display:block;
@@ -152,7 +150,7 @@
 		
     }
 	.site-name-footer p {
-		margin-top: 25px;
+		font-size: 16px;
 	}
 	/*wireframes*/
 	#wf{
@@ -194,5 +192,14 @@
 	#busdirectory {
 		display: block;
 	}
+	/*thankyou*/
+	#thankyou img{
+		width:100%;
+	}
+	#thankyou{
+		grid-template-columns: 1fr;
+	}
+	/*contact page*/
+	#contact-us 
 
 }

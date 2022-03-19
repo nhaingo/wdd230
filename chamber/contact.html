@@ -24,19 +24,18 @@
                 <section id="logo">
                     <div id="site-logo">
                         <a href="index.html"><img src="./images/greenfingers.webp" alt="Image of Green'Fingers'logo"></a>
+                        <h1 id="site-name">Green'Fingers<br>Chamber</h1>
                     </div>
-                    <h1 id="site-name">Green'Fingers<br>Chamber</h1> 
-                <!-- /section> 
-                <section id="navigation"> -->
+                </section> 
+                <section id="navigation"> 
                     <nav> 
                         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                         <ul id="primaryNav">
-                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="index.html">Home</a></li>
                             <li><a href="discover.html">Discover</a></li>
                             <li><a href="directory.html">Directory</a></li>
                             <li><a href="join.html">Join</a></li>
-                            <li class="active"><a href="contact.html">Contact Us</a></li>
-                            
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </nav>
                     <div class="social">
@@ -44,12 +43,40 @@
                         <a id="in" href="https://linkedin.com/"><img src="./images/linkedin.png" alt="Linkedin logo"></a>
                     </div>
                 </section> 
-                <div class="banner"></div>
             </div>
+            <div class="banner"></div>
             <div class="date"></div>
         </header>
-        <main>
-       </main>
+        <main id="contact-us">
+            <div class="banner-content">
+                <div class="contact-banner">
+                    <img src="images/contact.jpg" alt="picture of a rice field">
+                </div>
+                <div class="action">
+                    <a href="join.html"><button>Join Us</button></a>
+                    <h5>
+                        Have questions? We're ready to help. Choose the easiest way to get in touch.!
+                    </h5>
+                </div>
+            </div>
+            <div id="feedback">
+                <form method="get" action="thankyou.html">
+                    <fieldset id="mbinfo">
+                        <legend>Profile Information</legend>
+                        <label class="field">Name* <input type="text" name="fname" placeholder="First Name" required></label>
+                        <label class="field">Business Name<input type="text" name="busname" placeholder=""></label>
+                        <label class="field">Email Address* <input type="email" name="email" placeholder="user@email.org" required></label>
+                        <label class="field">Phone Number<input type="tel" name="phone" placeholder="xxx xx xxx xx" pattern="^[0-9\+\s]{10,17}$" required></label>
+                        
+                    </fieldset>
+                    <fieldset id="mbquestion">
+                        <legend>Message</legend>
+                            <label class="field">Question/Concern<textarea name="description" rows="4" cols="50"></textarea></label>
+                    </fieldset>
+                    <input type="submit" value="Send" class="submitBtn"> 
+                </form>
+            </div>
+        </main>
         <footer>
             <div class="address-contact">
                 <div id="site-logo-footer">

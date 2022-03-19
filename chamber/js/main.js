@@ -66,6 +66,8 @@ if (lastvisit > 0) {
 }
 // store the new number of visits value
 localStorage.setItem("last-visit-date", today);
+/*join page addEventListner on submit button*/
+
 
 
 

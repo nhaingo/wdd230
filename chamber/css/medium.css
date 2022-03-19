@@ -1,21 +1,24 @@
-@media only screen and (min-width: 650px){
+@media only screen and (min-width: 34rem){
     body{
         max-width: 960px;
-    
     }
     /*header*/
+    .headings {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     nav ul.open {
         display:block;
-        position:fixed;
         text-align: center;
-        top: 4rem;
-        left: 30rem;
+        top: 10rem;
+        left: 5rem;
         height: inherit;
         z-index:1;
+        
     }
     nav ul li a{
 		padding:1.2rem 0.5rem;
-		font-size: 12px;
+		font-size: 14px;
 	}
     nav button {
         background-color: transparent;
@@ -23,6 +26,10 @@
         border: none;
         font-size: 2rem;
         font-family: Arial, Helvetica, sans-serif;
+        margin-top: 6px;
+    }
+    #navigation{
+        margin-top: 2rem;
     }
     /*#hamburgerBtn span:nth-child(1) {
         margin-right: 40px;
@@ -39,56 +46,65 @@
 	}
     .social a img{
 		width: 3em;
+
 	}
     #site-name{
         font-size:1.5rem;
         font-family: 'Otomanopee One', sans-serif;
     }
     .date{
-        font-size: 18px;
+        font-size: 14px;
     }
     .banner {
-        font-size: 18px;
+        font-size: 14px;
     }
     /*main*/
     main{
-        max-width: 760px;
+        /*max-width: 760px*/
+        display: grid;
+        grid-template-columns: repeat (4, 1fr) ;
     }
-    .container,
-    .container1 {
+    .hero-section,
+    .release {
         grid-column: 1/4;
     }
-    .container5{
+    .spotlights{
         grid-row: 3;
         grid-column: 1/4;
         display:grid;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
         grid-gap:10px;
     }
-    .container5 div{
-        padding:8rem;
-        
+    .spotlights div{
+        padding:auto;
     }
-    .container4{
+    .join{
         display: grid;
         grid-row:4;
         grid-column: 1/4;
     }
     
-    .container2{
+    .event{
         grid-row:5;
         grid-column: 1/3;
         margin-right:0px;
         
     }
-    .container3 {
+    .weather {
         grid-row:5;
         margin-left:0px;
     }
-    .container3 img {
+    .weather img {
         width: 35%;
     }
+    .weather .wea, p{
+        font-size:14px;
+    }
     /*discover page*/
+    .discover p {
+        font-size: 14px;
+    }
     .discover section {
         grid-template-columns: 1fr 1fr;
         grid-gap:5px;
@@ -103,6 +119,33 @@
     .discover #mining img {
         position: relative;
         float: right;
+    }
+    /*join page*/
+    #join {
+        margin-left:0.5rem;
+        margin-right:0.5rem;
+    }
+    #join-benefits .benefit p{
+        text-align: left;
+        margin-left: 0.2rem;
+        font-size: 20px;
+    }
+    #join-benefits .benefit ul li{
+        font-size: 14px;
+    }
+    form fieldset{
+        margin:0.2rem
+    }
+    #join-benefits #bnfts {
+		display:grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap:.1rem
+	}
+    fieldset {
+        font-size: 14px;
+    }
+    fieldset h4{
+        font-size: 18px;
     }
     /*footer*/
     footer {
@@ -129,8 +172,10 @@
         width:30%;
     }
     .site-name-footer p{
-        padding-top:20px;
-        padding-right:30px;
+        padding-top:5px;
+    }
+    .site-name-footer {
+        margin-top:25px;
     }
     .address-contact {
         display:flex;
@@ -181,6 +226,22 @@
         margin:10px;
     }
         
+    /*Contact page*/
+    #contact-us #mbquestion {
+        grid-column:1;
+        grid-row:2;
+    }
+    #contact-us #feedback .submitBtn {
+        grid-column:1;
+        grid-row:3;
+        margin-top:0.2rem;
+    }
+    #contact-us #feedback{
+        margin-left: 2rem;
+    }
+    /*thank you*/
+    #thankyou .submitted p{
+        font-size:14px;
     }
 
 

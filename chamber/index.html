@@ -12,11 +12,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/base.css">
-        <link rel="stylesheet" href="./css/medium.css">
-        <link rel="stylesheet" href="./css/large.css">
-        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
     </head>
     <body>
         <header>
@@ -24,10 +23,10 @@
                 <section id="logo">
                     <div id="site-logo">
                         <a href="index.html"><img src="./images/greenfingers.webp" alt="Image of Green'Fingers'logo"></a>
+                        <h1 id="site-name">Green'Fingers<br>Chamber</h1>
                     </div>
-                    <h1 id="site-name">Green'Fingers<br>Chamber</h1> 
-                <!-- /section> 
-                <section id="navigation"> -->
+                </section> 
+                <section id="navigation"> 
                     <nav> 
                         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                         <ul id="primaryNav">
@@ -43,51 +42,47 @@
                         <a id="in" href="https://linkedin.com/"><img src="./images/linkedin.png" alt="Linkedin logo"></a>
                     </div>
                 </section> 
-                <div class="banner"></div>
             </div>
-          
+            <div class="banner"></div>
             <div class="date"></div>
-            
         </header>
         <main>
-            <div class="container">
+            <div class="hero-section">
                 <h3>Hero site same and call to action</h3>
-                <picture class="hero">
-                    <picture class="hero-image">
-                        <source media="(min-width:650px) and (max-width: 63.99rem)" srcset="images/hero-gf600.jpg">
-                        <source media="(min-width: 64rem)" srcset="images/hero-gf769.jpg">
-                        <img src="images/hero-gf500.jpg" alt="">
-                    </picture>
+                <picture class="hero-image">
+                    <source media="(min-width:650px) and (max-width: 63.99rem)" srcset="images/hero-gf600.jpg">
+                    <source media="(min-width: 64rem)" srcset="images/hero-gf769.jpg">
+                    <img src="images/hero-gf500.jpg" alt="">
                 </picture>
             </div>
-            <div class="container1">
+            <div class="release">
                 News release
             </div>
-            <div class="container2">
+            <div class="event">
                 Event
             </div>
-            <div class="container3">
+            <div class="weather">
                 <h4>Weather</h4>
                 <div class="wea">
                     <!--<img src="./images/weather.png" alt="weather logo">
                     <p><span id="temperature">32</span> °C</p>
                 </div>
                 <p>Partly Cloudy</p>-->
-                <p>Current Temperature: <span id="current-temp"></span>&deg;C</p>
-                <span id="icon-src"></span><figure><img src="" alt="" id="weathericon" />  <figcaption></figcaption></figure>      
-                <hr>
+                    <p>Current Temperature: <span id="current-temp"></span>&deg;C</p>
+                    <span id="icon-src"></span><figure><img src="" alt="" id="weathericon" />  <figcaption></figcaption></figure>      
+                    <hr>
                 
-                <p>Wind Speed: <span id="speed">15</span> km/h</p>
-                <p>Wind Chill: <span id="windchill"></span></p>
+                    <p>Wind Speed: <span id="speed">15</span> km/h</p>
+                    <p>Wind Chill: <span id="windchill"></span></p>
+                </div>
             </div>
-            <div class="container4">                
+            <div class="join">                
                 Join
             </div>
-            <div class="container5">  
+            <div class="spotlights">  
                 <div>Spotlight1</div>             
                 <div>Spotlight2</div>
                 <div id="spot3">Spotlight3</div>
-                
             </div>
         </main>
         <footer>
@@ -133,8 +128,8 @@
                 </div> 
             </div>   
         </footer>
-        <script src="./js/date.js"></script>
-        <script src="./js/main.js"></script>
-        <script src="./js/windchill.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/windchill.js"></script>
     </body>
 </html>
