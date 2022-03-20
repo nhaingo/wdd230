@@ -62,7 +62,7 @@
     main{
         /*max-width: 760px*/
         display: grid;
-        grid-template-columns: repeat (4, 1fr) ;
+        grid-template-columns: repeat(3, 1fr) ;
     }
     .hero-section,
     .release {
@@ -81,7 +81,7 @@
         grid-gap:10px;
     }
     .spotlights div{
-        padding:auto;
+        padding:10px;
     }
     .join{
         background-image: linear-gradient(white, #ffd449, #c56317f3 );
@@ -107,7 +107,7 @@
         font-size: 14px;
     }
     .event img{
-        width:20%
+        width:20%;
     }
     .weather {
         background-image: linear-gradient(white, #c56317f3, #2aa02c);
@@ -195,6 +195,7 @@
     }
     .site-name-footer {
         margin-top:25px;
+        text-align:center
     }
     .address-contact {
         display:flex;
@@ -262,7 +263,4 @@
     #thankyou .submitted p{
         font-size:14px;
     }
-
-
-
 }

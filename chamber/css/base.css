@@ -25,7 +25,7 @@ header img {
 
 .headings #logo {
     display: grid;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
     margin-top: 10px;
 }
 .headings #site-logo{
@@ -448,6 +448,7 @@ footer{
     text-align: center;
 }
 footer p {
+    font-family: Montserrat,sans-serif;
     margin:0px;
 }
 .location a {
@@ -531,7 +532,7 @@ h4 {
 .business-cards{
     display: grid;
     grid-template-columns: 1fr;
-    grid: gap 0.2rem;
+    grid-gap: 0.2rem;
     margin: 0 auto;
     border: 5px solid #F9A620;
     border-radius: 5px 5px 5px 5px;
