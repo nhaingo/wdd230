@@ -48,12 +48,18 @@
 		grid-row:1;
 		margin-right:0px;
 	}
+	.event p{
+		font-size: 16px;
+	}
 	.weather {
 		background-image: linear-gradient(white, #ffd449, #c56317f3 );
 		grid-column: 1;
 		grid-row:2;
 		margin-left:20px;
 		margin-right:0px;
+	}
+	.weather p{
+		font-size: 16px;
 	}
 	
 	.join {
@@ -64,6 +70,9 @@
 	}
 	.join img{
 		width:30%;
+	}
+	.join p{
+		font-size: 16px;
 	}
 	.hero-section {
 		grid-column: 2/4;
@@ -131,6 +140,9 @@
 	.discover #mining1 {
 		display: block;
 	}
+	.discover p{
+		font-size: 16px;
+	}
 	/*join page*/
 	#join {
         margin:auto;
@@ -159,6 +171,9 @@
 		margin-right: 20px;
 		
     }
+	#contact p{
+		font-size: 16px;
+	}
 	.site-name-footer p {
 		font-size: 16px;
 	}
@@ -208,6 +223,9 @@
 	}
 	#thankyou{
 		grid-template-columns: 1fr;
+	}
+	#thankyou p{
+		font-size: 16px;
 	}
 	/*contact page*/
 
