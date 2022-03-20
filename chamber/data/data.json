@@ -6,7 +6,8 @@
         "email": "ader@ader.mg",
         "website": "https://ader.mg/",
         "imageurl": "images/ader.jpg",
-        "phone": "+261 33 23 537 94"
+        "phone": "+261 33 23 537 94",
+        "membership": "bronze"
       },
       {
         "company": "Agrivet",
@@ -14,7 +15,8 @@
         "email": "agrivet@groupe-smtp.com",
         "website": "https://test.agrivet.mg/",
         "imageurl": "images/agrivet.jpg",
-        "phone": "+261 32 11 372 77"
+        "phone": "+261 32 11 372 77",
+        "membership": "gold"
       },
       {
         "company": "Apimada",
@@ -22,7 +24,8 @@
         "email": "apimadagascar@orange.fr",
         "website": "https://apimadagascar.wordpress.com",
         "imageurl": "images/apimada.jpg",
-        "phone": "+261 34 38 774 45"
+        "phone": "+261 34 38 774 45",
+        "membership": "bronze"
       },
       {
         "company": "Agronomes & Veterinaires Sans Frontieres",
@@ -30,7 +33,8 @@
         "email": "madagascar@avsf.org",
         "website": "https://www.avsf.org/en/posts/630/full/madagascar",
         "imageurl": "images/avsf.jpg",
-        "phone": "+261 034 72 684 97"
+        "phone": "+261 034 72 684 97",
+        "membership": "silver"
       },
       {
         "company": "Conseil Agricole Proximité",
@@ -38,7 +42,8 @@
         "email": "fitafa-cap@fitafa.mg",
         "website": "https://www.fifata.org/cap/",
         "imageurl": "images/cap.jpg",
-        "phone":"+261 20 44 497 08"
+        "phone":"+261 20 44 497 08",
+        "membership": "gold"
       },
       {
         "company": "CARE Madagascar",
@@ -46,7 +51,8 @@
         "email": "MDG.CAREMadagascar@care.org",
         "website": "https://care.mg/",
         "imageurl": "images/care.jpg",
-        "phone": "+261 34 47 300 70"
+        "phone": "+261 34 47 300 70",
+        "membership": "bronze"
       },
       {
         "company": "Ceffel Madagascar",
@@ -54,7 +60,8 @@
         "email": "ceffel.assoc@gmail.com",
         "website": "https://www.fifata.org/ceffel/",
         "imageurl": "images/ceffel.jpg",
-        "phone": "+261 33 37 540 43"
+        "phone": "+261 33 37 540 43",
+        "membership": "silver"
       },
       {
         "company": "FoFiFa",
@@ -62,7 +69,8 @@
         "email": "fofifa@blueline.mg",
         "website": "https://www.fofifa.mg",
         "imageurl": "images/fofifa.jpg",
-        "phone": "+261 20 22 401 30"
+        "phone": "+261 20 22 401 30",
+        "membership": "gold"
       },
       {
         "company": "Homeopharma",
@@ -70,7 +78,8 @@
         "email": "homeocompta1@homeopharma.mg",
         "website": "https://homeopharmafrance.fr/",
         "imageurl": "images/homeopharma.jpg",
-        "phone": "034 90 464 64"
+        "phone": "034 90 464 64",
+        "membership": "silver"
       },
       {
         "company": "Malagasy Dairy Board",
@@ -78,7 +87,8 @@
         "email": "mdb.gie@gmail.com",
         "website": "https://fararakotoarizaka.wordpress.com/malagasy-dairy-board/",
         "imageurl": "images/mdb.jpg",
-        "phone": "+261 33 15 111 77"
+        "phone": "+261 33 15 111 77",
+        "membership": "bronze"
       },
       {
         "company": "Service d'Appui pour la Gestion de l'Environnement ",
@@ -86,7 +96,8 @@
         "email": "sage@blueline.mg",
         "website": "https://www.madagascar-sage.org",
         "imageurl": "images/sage.jpg",
-        "phone": "+261 32 07 822 27"
+        "phone": "+261 32 07 822 27",
+        "membership": "bronze"
       },
       {
         "company": "Groupe Tiko Madagascar",
@@ -94,7 +105,8 @@
         "email": "tiko-group@tiko.org",
         "website":"https://tiko-group.org",
         "imageurl": "images/tiko.jpg",
-        "phone": "+261 20 44 484 47"
+        "phone": "+261 20 44 484 47",
+        "membership": "silver"
       }
     ]
   }

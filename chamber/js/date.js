@@ -32,7 +32,7 @@ var year = currentDate.getFullYear();
 var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
 
 // Set the date field to the current date
-document.querySelector("#registerdate").value = day + " " +montharray[month]+ " " + year;
+/*document.querySelector("#registerdate").value = day + " " +montharray[month]+ " " + year;*/
 
 // Set the value of the "time" field
 var hours = currentDate.getHours();

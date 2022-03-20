@@ -68,7 +68,10 @@ if (lastvisit > 0) {
 localStorage.setItem("last-visit-date", today);
 /*join page addEventListner on submit button*/
 
-
+// function for a pop up window on contact page
+function myFunction() {
+    alert("Thank you! We have received your request. We will get back to you as soon as possible");
+  }
 
 
 

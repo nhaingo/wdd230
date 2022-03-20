@@ -43,11 +43,13 @@
 		margin: 10px auto
 	}
 	.event{
+		background-image: linear-gradient(white, #ffd449);
 		grid-column:1;
 		grid-row:1;
 		margin-right:0px;
 	}
 	.weather {
+		background-image: linear-gradient(white, #ffd449, #c56317f3 );
 		grid-column: 1;
 		grid-row:2;
 		margin-left:20px;
@@ -58,6 +60,10 @@
 		grid-column: 1;
 		grid-row:3;
 		margin-right:0px;
+		background-image: linear-gradient(white, #c56317f3, #2aa02c);
+	}
+	.join img{
+		width:30%;
 	}
 	.hero-section {
 		grid-column: 2/4;
@@ -68,6 +74,9 @@
 		grid-column: 2/4;
 		grid-row: 3;
 		margin:0px;
+		padding:10px;
+		border-bottom: 10px solid #0a260b;
+		background-image: linear-gradient(white, #c56317f3, #2aa02c);
 	}
 	.spotlights{
 		grid-column: 4;
@@ -79,6 +88,7 @@
         padding: 30px;
 		margin-left:0px;
 		grid-gap:0px;
+		background-image: linear-gradient(white, #c56317f3, #2aa02c);
 		
 	}
 	.spotlights div#spot3{
@@ -200,6 +210,6 @@
 		grid-template-columns: 1fr;
 	}
 	/*contact page*/
-	#contact-us 
+
 
 }

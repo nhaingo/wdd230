@@ -52,22 +52,27 @@
                 <picture class="hero-image">
                     <source media="(min-width:650px) and (max-width: 63.99rem)" srcset="images/hero-gf600.jpg">
                     <source media="(min-width: 64rem)" srcset="images/hero-gf769.jpg">
-                    <img src="images/hero-gf500.jpg" alt="">
+                    <img src="images/hero-gf500.jpg" alt="picture for call to action">
                 </picture>
             </div>
             <div class="release">
-                News release
+                <h4>News release</h4>
+                <ul>
+                    <a href="https://www.cci.mg/fr/?p=actualite&t=actualite-eco#"><li>Relaunching the agricultural sector</li></a>
+                    <a href="https://www.lactualite.mg/economie/12346-mvola-giz-un-revenu-mensuel-pour-les-paysans-professionnels/"><li>MVOLA - GIZ: A monthly income for professional farmers</li></a>
+                    <a href="https://www.lactualite.mg/economie/7995-agriculture-un-complexe-de-laboratoire-au-fofifa/"><li>A new laboratory complex at Fofifa</li></a>
+                </ul>
             </div>
             <div class="event">
-                Event
+                <h4>Loading...Fier Mada 2022</h4>
+                <p>Green'Fingers will be part of the annual event of Fier Mada. 
+                    Subscription to participate in this event is now open.
+                    Mark the date: 28 May 2022 to 31 May 2022</p>
+                <img id="event-img" src="images/fiermada.jpg" alt="logo of fier mada event">
             </div>
             <div class="weather">
                 <h4>Weather</h4>
                 <div class="wea">
-                    <!--<img src="./images/weather.png" alt="weather logo">
-                    <p><span id="temperature">32</span> °C</p>
-                </div>
-                <p>Partly Cloudy</p>-->
                     <p>Current Temperature: <span id="current-temp"></span>&deg;C</p>
                     <span id="icon-src"></span><figure><img src="" alt="" id="weathericon" />  <figcaption></figcaption></figure>      
                     <hr>
@@ -77,12 +82,18 @@
                 </div>
             </div>
             <div class="join">                
-                Join
+                <h4>Let's Work Together!</h4>
+                <p>Want to access the chamber's benefits? Join us now.</p>
+                <a href="join.html"><img src="images/join.jpg" alt="image to access the join page"></a>
             </div>
             <div class="spotlights">  
-                <div>Spotlight1</div>             
-                <div>Spotlight2</div>
-                <div id="spot3">Spotlight3</div>
+                <div id="spot1">
+                    <img src="images/agrivet.jpg">
+                </div>             
+                <div id="spot2">
+                    <img src="images/care.jpg">
+                </div>
+                <div id="spot3"><img src="images/avsf.jpg"></div>
             </div>
         </main>
         <footer>
@@ -131,5 +142,6 @@
         <script src="js/date.js"></script>
         <script src="js/main.js"></script>
         <script src="js/windchill.js"></script>
+        <script src="js/spotlight.js"></script>
     </body>
 </html>

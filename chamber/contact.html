@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="WDD230: Join Page for Green'Fingers Chamber">
-        <title>Green'Fingers Chamber Join Page</title>
+        <meta name="description" content="WDD230: Contact Page for Green'Fingers Chamber">
+        <title>Green'Fingers Chamber Contact Page</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
@@ -49,18 +49,13 @@
         </header>
         <main id="contact-us">
             <div class="banner-content">
-                <div class="contact-banner">
-                    <img src="images/contact.jpg" alt="picture of a rice field">
-                </div>
-                <div class="action">
-                    <a href="join.html"><button>Join Us</button></a>
+                    <img id="in-logo" src="images/contact.jpg" alt="field rice">
                     <h5>
                         Have questions? We're ready to help. Choose the easiest way to get in touch.!
                     </h5>
-                </div>
             </div>
             <div id="feedback">
-                <form method="get" action="thankyou.html">
+                <form>
                     <fieldset id="mbinfo">
                         <legend>Profile Information</legend>
                         <label class="field">Name* <input type="text" name="fname" placeholder="First Name" required></label>
@@ -73,7 +68,8 @@
                         <legend>Message</legend>
                             <label class="field">Question/Concern<textarea name="description" rows="4" cols="50"></textarea></label>
                     </fieldset>
-                    <input type="submit" value="Send" class="submitBtn"> 
+                    <button onclick="myFunction()"class="submitBtn">Send</button>
+                    <p id="message"></p>
                 </form>
             </div>
         </main>
