@@ -60,10 +60,10 @@
                 <fieldset id="mblevel">
                     <legend>Business Information</legend>
                         <label class="field">Business Name*<input type="text" name="busname" placeholder="" required></label>
-                        <label class="field">Business Position <input type="text" name="business" pattern="^[A-zÀ-ž\s\-]{7,}$"placeholder="Title"></label>
+                        <label class="field">Business Position <input type="text" name="business" pattern="^[A-zÀ-ž\s\-]{7,}$" placeholder="Title"></label>
                         <div id="membershiplevel">
                             <div class="benefit">
-                                <label class="mbr "for="membership">Membership Level:</label>
+                                <label class="mbr " for="membership">Membership Level:</label>
                                 <select name="membership" id="membership-select">
                                     <option value=""disabled selected>--Please choose an option--</option>
                                     <option id="fr" value="free">NP Membership</option>
@@ -72,6 +72,7 @@
                                     <option id="gol" value="gold">Gold Membership</option>
                                 </select>
                             </div>
+                        </div>
                         <label class="field">Business Description <textarea name="description" rows="4" cols="50"></textarea></label>
                 </fieldset>
                 <input type="hidden" id="join-time" name="registertime" value="currentTime"/>
