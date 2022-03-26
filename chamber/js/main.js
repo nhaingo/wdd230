@@ -45,7 +45,7 @@ else {
 
 /*number of days since last visits*/
 //Get the data of 'last-visit-date' from the local storage and store inside a variable called lastvisit
-const lastvisit = Number(window.localStorage.getItem('last-visit-date'));
+/*const lastvisit = Number(window.localStorage.getItem('last-visit-date'));
 //Initialize a variable to get the id element from the DOM
 const visitsDisplay = document.querySelector("#visits");
 

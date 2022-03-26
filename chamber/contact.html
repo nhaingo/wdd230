@@ -49,28 +49,34 @@
         </header>
         <main id="contact-us">
             <div class="banner-content">
-                    <img id="in-logo" src="images/contact.jpg" alt="field rice">
-                    <h5>
-                        Have questions? We're ready to help. Choose the easiest way to get in touch.!
-                    </h5>
+                <h4 id="contact-banner">Contact Us</h4>
+                <img id="in-logo" src="images/contact.jpg" alt="field rice">
+                <h5>
+                    Have questions? We're ready to help. Choose the easiest way to get in touch.!
+                </h5>
             </div>
-            <div id="feedback">
-                <form>
-                    <fieldset id="mbinfo">
-                        <legend>Profile Information</legend>
-                        <label class="field">Name* <input type="text" name="fname" placeholder="First Name" required></label>
-                        <label class="field">Business Name<input type="text" name="busname" placeholder=""></label>
-                        <label class="field">Email Address* <input type="email" name="email" placeholder="user@email.org" required></label>
-                        <label class="field">Phone Number<input type="tel" name="phone" placeholder="xxx xx xxx xx" pattern="^[0-9\+\s]{10,17}$" required></label>
-                        
-                    </fieldset>
-                    <fieldset id="mbquestion">
-                        <legend>Message</legend>
-                            <label class="field">Question/Concern<textarea name="description" rows="4" cols="50"></textarea></label>
-                    </fieldset>
-                    <button onclick="myFunction()" class="submitBtn">Send</button>
+            <div class = 'contact-body'>
+                <div id="feedback"> 
                     <p id="message"></p>
-                </form>
+                    <form>
+                        <fieldset id="mbinfo">
+                            <legend>Profile Information</legend>
+                            <label class="field">Name* <input type="text" name="fname" placeholder="First Name" required></label>
+                            <label class="field">Business Name<input type="text" name="busname" placeholder=""></label>
+                            <label class="field">Email Address* <input type="email" name="email" placeholder="user@email.org" required></label>
+                            <label class="field">Phone Number<input type="tel" name="phone" placeholder="xxx xx xxx xx" pattern="^[0-9\+\s]{10,17}$" required></label>
+                        
+                        </fieldset>
+                        <fieldset id="mbquestion">
+                            <legend>Message</legend>
+                            <label class="field">Question/Concern<textarea name="description" rows="4" cols="50"></textarea></label>
+                        </fieldset>
+                        <button onclick="myFunction()" class="submitBtn">Send</button>
+                    </form>
+                </div>
+                <div class="id">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3776.043431384664!2d47.4631854!3d-18.8407366!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smg!4v1648276707176!5m2!1sen!2smg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </main>
         <footer>

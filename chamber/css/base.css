@@ -179,7 +179,7 @@ main img{
 }
 .spotlights {
     border-bottom: 10px solid #0a260b;
-    background-image: linear-gradient(white, #c56317f3, #104911)
+    background-image: linear-gradient(white, #c56317f3, #104911);
 }
 .hero-section {
     padding:10px;
@@ -189,6 +189,7 @@ main .hero {
     width: auto;
     height: 12rem;
 }
+
 .event {
     padding:10px;
     border-bottom: 10px solid #0a260b;
@@ -221,7 +222,8 @@ main .hero {
 .weather h4,
 .event h4,
 .join h4,
-.release h4 {
+.release h4,
+.spotlights h4 {
     margin:0;
     font-size: 16px;
     text-decoration: underline;
@@ -260,19 +262,24 @@ main .hero {
    background-image: linear-gradient(white, #c56317f3, #2aa02c);
 }
 .spotlights{
-    padding:20px;
+    padding:10px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     background-image: linear-gradient(white, #c56317f3, #2aa02c);
+    font-size:12px;
 
 }
 .spotlights div{
     border:#104911;
     border: 1px solid #104911;
-    padding:40px;
+    padding:20px;
    
 }
-#spot3{
+.spotlights img{
+    width:30%;
+    padding-top:10px;
+}
+.spotlight3{
     display:none;
 }
 /*discover main*/
@@ -418,6 +425,13 @@ form fieldset label, form fieldset .field textarea{
     width: 100%;
     margin-bottom: .2rem ;
     margin-top: .2rem;
+   
+}
+form fieldset .field textarea {
+    background-color:rgba(235, 240, 238, 0.849);
+}
+form fieldset #membershiplevel #membership-select{
+background-color:rgba(235, 240, 238, 0.849);
 }
 form fieldset .field input, form fieldset .field textarea {
     border-radius: 5px;
@@ -427,7 +441,12 @@ form fieldset .field input, form fieldset .field textarea {
     margin-top: .2rem;
 }
 form fieldset .field input:required {
-    border: 1px solid red
+    border-right: 5px solid red;
+    border-left: 5px solid red;
+
+}
+form fieldset .field input{
+    background-color:rgba(235, 240, 238, 0.849);
 }
 #join-benefits .benefit p{
     font-size: 12px;
@@ -566,6 +585,22 @@ h4 {
     width:100%;
     z-index:0;
 }
+#contact-us iframe {
+    grid-column: 2;
+    width:95%;
+    height:100%;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top: 20px;
+}
+#contact-us #contact-banner{
+    font-size: 20px;
+    color:antiquewhite;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
 /*thank you*/
 #thankyou .submitted{
     margin: 40px auto 60px auto;
@@ -579,3 +614,4 @@ h4 {
 #thankyou .submitted p{
     font-size:12px;
 }
+

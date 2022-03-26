@@ -205,6 +205,31 @@
         display: flex;
         flex-direction: column;  
     }
+    #contact-us form #mbinfo .field input{
+        margin-right:50px;
+    }
+    #contact-us .contact-body {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #contact-us #feedback form{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    #contact-us iframe {
+        grid-column: 2;
+        width:95%;
+        height:80%;
+        margin-right:20px;
+        margin-top: 25px;
+    }
+    #contact-us #feedback form .submitBtn {
+        margin-left:3px;
+    }
+    #contact-us #contact-banner{
+        font-size: 40px;
+        top: 10%;
+    }
     /*wireframes*/
     body #wf{
         max-width:960px;

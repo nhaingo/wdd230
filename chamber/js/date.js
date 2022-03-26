@@ -26,7 +26,7 @@ if (bday == "Monday" || bday == "Tuesday") {
 }
 
 // Set the value of the "date" field
-var day = currentDate.getDate();
+/*var day = currentDate.getDate();
 var month = currentDate.getMonth();
 var year = currentDate.getFullYear();
 var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
@@ -35,9 +35,10 @@ var montharray=new Array("January","February","March","April","May","June","July
 /*document.querySelector("#registerdate").value = day + " " +montharray[month]+ " " + year;*/
 
 // Set the value of the "time" field
-var hours = currentDate.getHours();
+/*var hours = currentDate.getHours();
 var mins = currentDate.getMinutes();
 var seconds = currentDate.getSeconds();
 
 // Set the date field to the current time
 document.querySelector("#registertime").value = hours + ":" + mins;
+*/

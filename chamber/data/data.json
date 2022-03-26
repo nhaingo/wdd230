@@ -7,7 +7,7 @@
         "website": "https://ader.mg/",
         "imageurl": "images/ader.jpg",
         "phone": "+261 33 23 537 94",
-        "membership": "bronze"
+        "membership": "gold"
       },
       {
         "company": "Agrivet",
@@ -79,7 +79,7 @@
         "website": "https://homeopharmafrance.fr/",
         "imageurl": "images/homeopharma.jpg",
         "phone": "034 90 464 64",
-        "membership": "silver"
+        "membership": "np"
       },
       {
         "company": "Malagasy Dairy Board",
@@ -97,7 +97,7 @@
         "website": "https://www.madagascar-sage.org",
         "imageurl": "images/sage.jpg",
         "phone": "+261 32 07 822 27",
-        "membership": "bronze"
+        "membership": "np"
       },
       {
         "company": "Groupe Tiko Madagascar",
