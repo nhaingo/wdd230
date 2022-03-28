@@ -570,6 +570,9 @@ h4 {
     border-radius: 2px;
     margin-top:0.5rem;
 }
+#busdirectory .btnView{
+    margin-left:40%;
+}
 /*contact page*/
 #contact-us {
     display:grid;
@@ -613,5 +616,42 @@ h4 {
 }
 #thankyou .submitted p{
     font-size:12px;
+}
+
+#busdirectory .business-lists table{
+        
+        border-collapse: collapse;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-align: left;
+        border:4px solid #F9A620;
+        margin-left:10px;
+        margin-right:10px;
+        border-radius: 5px 5px 5px 5px;
+        display: grid;
+        grid-template-columns:1fr;
+        background-color: #e8d69c;
+}
+#busdirectory .business-lists table tr, td{
+    padding-top: 20px;
+    margin-left: 30px;
+}
+#busdirectory .business-lists table tr :nth-child(odd) {
+    background-color: #ffd449; 
+    border-bottom: 1px solid black;
+   
+}
+#busdirectory .business-lists table tr .listaddress {
+    margin-left: 50px;
+}
+#busdirectory .business-lists table tr .listphone {
+    grid-column: 3; 
+}
+#busdirectory .business-lists table tr .listwebsite {
+    grid-column: 4; 
+}
+#busdirectory .business-lists table tr {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
 }
 

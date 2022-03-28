@@ -2,7 +2,8 @@
 //store the resource, the URL of the JSON file into a const variable to start.
 const requestURL = 'https://nhaingo.github.io/wdd230/chamber/data/data.json';
 const cards = document.querySelector('.business-cards');
-//const listcards = document.querySelector('.business-lists');
+const listcards = document.querySelector('.business-lists');
+let table = document.createElement('table');
 
 //use a basic fetch() method and feed it the required argument, the URL and use the .then() method that returns a Promise which response we will work with as an argument to an anonymous function. 
 //extract the JSON content from the noise of the full HTTP response by using the json() method.
@@ -17,11 +18,9 @@ fetch(requestURL)
         const cards = jsonObject.directory;
         cards.forEach(displayCard);
         const listcards = jsonObject.directory;
-        //listcards.forEach(listCard);
+        listcards.forEach(listCard);
         //loop through every record and process each one into its own 'card' (HTML output), one at a time.
-        //using a forEach method (Links to an external site.), define a function named "display" which will be called for each card record in the directory list.
-        directory.forEach(displayCard);
-        //directory.forEach(listCard);
+        //using a forEach method (Links to an external site.), define a function named "display" which will be called for each card record in the directory list
     });
    
 
@@ -97,7 +96,36 @@ function displayCard(card) {
 // Add/append the existing HTML div with the cards class with the section(businessCard)
   listcards.appendChild(listCard);
 }*/
+function listCard(card){
 
+  let row = document.createElement('tr');
+  let row_data = document.createElement('td');
+  row_data.innerHTML = `${card.company}`;
+  let row_data1 = document.createElement('td');
+  row_data1.innerHTML = `${card.address}`;
+  let row_data2 = document.createElement('td');
+  row_data2.innerHTML = `${card.phone}`;
+
+  let row_data3 = document.createElement('td');
+  let link = document.createElement('a');
+  link.setAttribute('href', 'card.website');
+  link.setAttribute('target', "_blank");
+  link.textContent = `${card.website}`;
+  row_data3.appendChild(link);
+
+  row_data.setAttribute('class', 'listcompany');
+  row_data1.setAttribute('class', 'listaddress');
+  row_data2.setAttribute('class', 'listphone');
+  row_data3.setAttribute('class', 'listwebsite');
+  
+  table.appendChild(row);
+  row.appendChild(row_data);
+  row.appendChild(row_data1);
+  row.appendChild(row_data2);
+  row.appendChild(row_data3);
+   
+  listcards.appendChild(table);
+}
 
 
 

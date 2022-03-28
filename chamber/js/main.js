@@ -44,35 +44,32 @@ else {
 }
 
 /*number of days since last visits*/
-//Get the data of 'last-visit-date' from the local storage and store inside a variable called lastvisit
-/*const lastvisit = Number(window.localStorage.getItem('last-visit-date'));
+//Get the data of 'visit-ls' from the local storage and store inside a variable called lastvisit
+const lastvisit = Number(window.localStorage.getItem('visits-ls'));
 //Initialize a variable to get the id element from the DOM
-const visitsDisplay = document.querySelector("#visits");
+const displayNumberOfDay = document.querySelector("#visits");
+const today = Date.now();
 
 //Set a condition to calculate the number of days between the last visit and the actual date:
 //If the condition is true
 //Display the value of the number of days
 if (lastvisit > 0) {
-    const today = Date.now();
-    let factor = 86400000;
-    let daysBetween = Math.floor(Math.abs(today - lastvisit) / factor);
-    visitsDisplay.textContent = `${daysBetween.toFixed(0)}`;
+    let daysBetween = Math.floor((Math.abs(today - lastvisit) /1000)/ 86400);
+    displayNumberOfDay.textContent = `${daysBetween}`;
     
     
 }  else {  
     
-    visitsDisplay.textContent = 'This is your first visit! Welcome!';
+    displayNumberOfDay.textContent = 'This is your first visit! Welcome!';
 
 }
 // store the new number of visits value
-localStorage.setItem("last-visit-date", today);
-/*join page addEventListner on submit button*/
+localStorage.setItem('visits-ls', today);
 
 // function for a pop up window on contact page
 function myFunction() {
     alert("Thank you! We have received your request. We will get back to you as soon as possible");
   }
-
 
 
 

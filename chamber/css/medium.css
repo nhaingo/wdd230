@@ -270,6 +270,11 @@
     #busdirectory section {
         margin:10px;
     }
+    #busdirectory {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
         
     /*Contact page*/
     #contact-us #mbquestion {

@@ -1,7 +1,7 @@
 const requestURL = "./data/data.json";
 
 const randlist = (number) => {
-  //A function that creates and returnsa list that contains 3 random numbers
+  //A function that creates and returns a list that contains 3 random numbers
 
   let newlist = [];
 
@@ -25,7 +25,7 @@ function spotlight(directory) {
   }
 
   // pick a gold or silver member at random
-  spotList = randlist(spotlightBusinesses.length);
+  let spotList = randlist(spotlightBusinesses.length);
 
   const spot1 = spotlightBusinesses[spotList[0]];
   const spot2= spotlightBusinesses[spotList[1]];
@@ -35,19 +35,22 @@ function spotlight(directory) {
           <h4>${spot1.company}</h4>
           <img src="${spot1.imageurl}" alt="${spot1.company}" loading="lazy"/>
           <p class="spot-email">${spot1.email}</p>
-          <p class="spot-number">${spot1.phone} | <a href="${spot1.website}"  target="_blank">Website</a></p>
+          <p class="spot-number">${spot1.phone}</p>
+          <a href="${spot1.website}"  target="_blank">Website</a>
         </div>
         <div class="spotlight2">
           <h4>${spot2.company}</h4>
           <img src="${spot2.imageurl}" alt="${spot2.company}" loading="lazy"/>
           <p class="spot-email">${spot2.email}</p>
-          <p class="spot-number">${spot2.phone} | <a href="${spot2.website}" target="_blank">Website</a></p>
+          <p class="spot-number">${spot2.phone}</p>
+          <a href="${spot2.website}" target="_blank">Website</a>
         </div>
         <div class="spotlight3">
           <h4>${spot3.company}</h4>
           <img src="${spot3.imageurl}" alt="${spot3.company}" loading="lazy"/>
           <p class="spot-email">${spot3.email}</p>
-          <p class="spot-number">${spot3.phone} | <a href="${spot3.website}"  target="_blank">Website</a></p>
+          <p class="spot-number">${spot3.phone}</p>
+          <a href="${spot3.website}"  target="_blank">Website</a>
         </div>`;
 }
 
