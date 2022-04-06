@@ -130,7 +130,7 @@
     }
     .discover #mining{
         display: grid;
-        grid-template-columns: fit-content(300px) 1fr;
+        grid-template-columns: fit-content(300px) 1fr 1fr;
         grid-template-rows:1fr auto;
         grid-column: 1/span 2;
         margin-top:5px;

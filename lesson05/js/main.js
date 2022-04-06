@@ -2,6 +2,7 @@ const list = document.querySelector('ul');
 const input = document.querySelector('input');
 const button = document.querySelector('button');
 
+
 button.addEventListener('click', function() {
     let mychapt = input.value;
     input.value = '';
@@ -18,6 +19,8 @@ button.addEventListener('click', function() {
     btn.onclick = function(e) {
         list.removeChild(chaptlist);
     };
+    if (input.maxLength = 2) {
+        list.removeChild(chaptlist);
+    }
     input.focus();
-}
-)
+});

@@ -1,0 +1,201 @@
+@media only screen and (min-width: 1081px) {
+    
+    body{
+        max-width:auto;
+        margin:auto;
+        padding:auto;
+    }
+    /*header*/
+    .heading {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .heading #heading-name #site-name{
+        margin-top:3rem;
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    .heading #heading-name #site-logo{
+        margin-top:20px;
+    }
+    .heading #navigation{
+        margin-left:0;
+        margin-right: 0;
+        margin-bottom: 0;
+        display:flex;
+    }
+    .heading #navigation #primaryNav{
+        margin-left:15rem;
+        margin-top: 1rem;
+    }
+    nav a{
+        font-size: 24px ;
+    }
+    .heading #navigation .social{
+        margin:0;
+        margin-top:1rem;
+        margin-left: 15rem;
+        
+    }
+    .banner p {
+        font-weight: bolder;
+        position: absolute;
+        margin-top: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #bf8d36;
+        opacity: 0.8;
+        text-align: left;
+        border-radius: 5px;
+        padding:40px;
+        
+    }
+    
+    main #about-us{
+        margin-left:10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        border: 2px solid black;
+        padding:10px;
+        border-radius: 5px;
+        background-color: white;
+    }
+    h2{
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+    }
+    p{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 14px;
+        text-align: justify;
+       
+    }
+    /*main*/
+    #temple-inn-home #information{
+        display: none;
+    }
+    #temple-inn-home h2{
+        font-size: 24px;
+    }
+    .temple #temple1 img{
+        float: left;
+        width:35%;
+        margin-right:5px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    
+    #temple-inn-home #about-us, 
+    #temple-inn-home .banner {
+        display:block;
+    }
+    #temple-inn-home .banner p{
+       
+        font-size: 24px;
+        color: black;
+    }
+    #temple-inn-home .banner a:link{
+        text-decoration: none;
+
+    }
+    #temple-inn-home .smallview{
+        grid-row:4;
+        display: flex;
+        flex-direction: row;
+        margin:0;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom:10px;
+    }
+    #temple-inn-home .temple{
+        grid-row: 3;
+    }
+    #temple-inn-home .temple p{
+        font-size: 16px;
+    }
+    #temple-inn-home #about-us{
+        grid-row: 2; 
+        background-color: #d9ae61;
+        margin-top: 0;
+    }
+    #temple-inn-home #about-us #about{
+        font-size: 16px;
+    }
+    #temple-inn-home .temple {
+        margin-left: 10px;
+        
+    }
+    .temple #temple1 #details1 p{
+        margin-left: 25rem;
+    }
+    #weather {
+        margin-bottom:10px;
+        margin-top:10px;
+        margin-left:10px;
+        text-align: center;
+    }
+    #contact {
+        margin-top: 10px;
+    }
+    #booking img{
+        width:60%;
+    }
+    #booking iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        margin: 0;
+        border-radius: 5px;
+        border: 0;
+    }
+    #booking {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #temple-inn-home .smallview p{
+        font-size:16px;
+    }
+    /*temples page*/
+    #temple-inn-home #temple-cards{
+        grid-row:2;
+    }
+    /*footer*/
+    #author p{
+        text-align: center;
+    }
+
+    #templeinfo p{
+       font-size: 16px;
+       text-align: center;
+    }
+    #templeinfo img{
+        width:40%;
+        height: auto;
+    }
+    #templeinfo #maplink{
+        display:none;
+    }
+    #templeinfo iframe{
+        display:block;
+    }
+    /*resevations pages*/
+    #reservation-form{
+        grid-row:2;
+    }
+    #submitted{
+        grid-row:2;
+    }
+    #reservation .smallview #bookimg{
+        margin-top: 10px;
+    }
+    /*contact page*/
+    #contactsection #temple-inn-home #location-image {
+        margin-top: 4rem;
+        margin-left:1rem;
+
+    }
+    
+}

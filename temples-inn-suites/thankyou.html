@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="WDD230: Home Page for Temple Inn and Suites">
+        <title>Temple Inn and Suites Home Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+    <body id="thankyou">
+        <header>
+            <div class="heading">
+                <section id = "heading-name">
+                    <div id="site-logo">
+                        <a href="index.html"><img src="./images/templeinnandsuites-logo.webp" alt="Temple Inn and Suites logo"></a>
+                    </div>
+                    <div id="site-name">
+                        <h1>Temple Inn & Suites</h1>
+                    </div>
+                </section>
+                <section id="navigation"> 
+                    <nav> 
+                        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                        <ul id="primaryNav">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="temples.html">Temples</a></li>
+                            <li><a href="reservations.html">Reservations</a></li>
+                            <li><a href="services.html">Services</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social">
+                        <a id="fb" href="https://facebook.com/"><img src="./images/facebook.jpg" alt="facebook logo"></a>
+                        <a id="in" href="https://linkedin.com/"><img src="./images/linkedin.jpg" alt="Linkedin logo"></a>
+                        <a id="in" href="https://twitter.com/"><img src="./images/twitter.jpg" alt="twitter logo"></a>
+                    </div>
+                </section> 
+            </div>
+        </header>
+        <main id="temple-inn-home">
+            
+            <div class="banner">
+                <p><a href="contact.html">Contact Us for more information</a></p>
+                <picture class="banner-image">
+                    <source media="(min-width:650px) and (max-width: 949px)" srcset="images/banner-medium.jpg">
+                    <source media="(min-width: 950px)" srcset="images/banner1.jpg">
+                    <img src="images/banner-small.jpg" alt="banner image for homepage">
+                </picture>
+            </div>
+            <section id="submitted">
+                <h3>Thank You! Request Submitted Successfully</h3>
+                  <p>
+                    Your request to book a room at Temple Inn & Suites has been submitted successfully.
+                    You will be contacted as soon as possible by our front office department to confirm your reservation. 
+                  </p>
+            </section>
+        </main>
+        <footer>
+            <div id="templeinfo">
+                <img src="./images/templeinnandsuites-logo.webp" alt="logo of Temple Inne and Suites">
+                <p>Temple Inn & Suites Headquarter,<br>4810 Montgomery Ln #300, Bethesda, MD 20814</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.409032436698!2d-77.09900308464708!3d38.983160179557444!2m3!1f0!2f0!3f0!3m2!1i1024!
+                2i768!4f13.1!3m3!1m2!1s0x89b7c97c9d6d973d%3A0x42c7ba977f6144ef!2s4810%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20USA!5e0!3m2!1sen!2smg!4v1649165260489!5m2!1sen!2smg" 
+                width="200" height="150" style="border: 2px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a id="maplink" href="https://goo.gl/maps/UdJdbjYM8ZjndMab9"><img src="https://img.icons8.com/color/30/000000/worldwide-location.png" alt="map location icon"></a>
+            </div>
+            <div id="author">
+                <p id="name">&copy;<span id="year"></span> | Haingotiana Naharivelo | WDD230 - Temple Inn & Suites</p>
+                <div class="update">
+                    Last Modified: <span id="lastModifiedDate"></span>
+                </div>
+                <p><a href="references.html">References</a></p>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

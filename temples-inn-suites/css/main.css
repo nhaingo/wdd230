@@ -1,0 +1,527 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    width:100%;
+    max-width:614px;
+}
+header{
+    border-bottom: 10px solid #862d1d;
+}
+.heading {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.heading #site-logo{
+    grid-column:1;
+}
+
+.heading #site-name {
+    display:none;
+
+}
+
+header #navigation {
+    display: flex;
+    flex-direction: row;
+    margin-top:6rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#site-logo img{
+        width:10rem;
+        padding-left: 20px;
+	    height: auto;    
+}
+#site-name{
+    color:black;
+    font-size:.8rem;
+    font-family: 'Lato', sans-serif;
+    margin-left:20px;
+    margin-right: 10rem;
+}
+
+.social img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 3px;
+    }
+nav a{
+    text-decoration: none ;
+    font-size: 12px ;
+    font-family: 'Otomanopee One', sans-serif;
+    color:rgb(16, 11, 6);
+    border: none;
+    background-color:transparent;
+    font-weight: bold;
+}
+nav ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    display:none;
+    
+}
+nav button {
+    border: none;;
+    color: black;
+    background-color: transparent;
+    font-size:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: center;
+}
+nav ul li a{
+    display:block;
+    padding:10px 10px 20px;
+    text-decoration: none;
+
+}
+nav ul li.active a{
+    font-size: large;
+    border: 2px solid #862d1d;
+    border-radius: 5px 5px 5px 5px ;
+    opacity: 1;
+    color: black;
+    background-image: linear-gradient(white, #bf8d36, #862d1d);
+    font-weight: bold;
+}
+nav ul li a:hover {
+    opacity: 1;
+	background-color: #862d1d;
+    color: white ;
+}
+nav ul.open {
+    list-style-type: none;
+    display: block;
+    font-size: large;
+    font-weight: bold;
+    padding: 0;
+    background-color: gray;
+    border-radius:px;
+    position: fixed;
+    margin: 30px;
+    left: 0;
+    width: 50%;
+    height: inherit;
+    text-align: center;
+    z-index:1;
+}
+nav #hamburgerBtn span{
+    margin-right:20px;
+}
+#hamburgerBtn span:nth-child(1) {
+    display:block;
+}
+#hamburgerBtn span:nth-child(2) {
+    display:none;
+}
+#hamburgerBtn.open span:nth-child(1) {
+    display:none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+    display:block;
+}
+/*main*/
+main{
+    background-color: #bf8d36;
+}
+
+main #about-us, .banner {
+    display:none;
+}
+#temple-inn-home h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color:#862d1d;
+}
+#temple-inn-home p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+#temple-inn-home #about{
+    text-align: justify;
+}
+#temple-inn-home .smallview{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 10px solid #862d1d;
+    grid-gap:10px;
+}
+#temple-inn-home .smallview #map{
+    display: none;
+}
+#weather, #booking, #contact{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px ;
+    background-color: white;
+    font-size:14px;
+}
+#weather {
+    margin-left:10px;
+    text-align: center;
+}
+#contact {
+    margin-right: 10px;
+}
+#booking iframe {
+	width: 90%;
+	height: 90%;
+	border: 0;
+	margin: 0;
+	border-radius: 5px;
+	border: 0;
+}
+#booking img{
+    width:90%;
+    margin-top: 30px;
+    margin-left:10px;
+}
+#smallview h2{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+#temple-inn-home .temple{
+    border-bottom: 10px solid #862d1d;
+}
+.temple #temple1, .temple #temple2{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+    border: 1px solid black;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #d9ae61;
+}
+.temple #temple1 #details1, 
+.temple #temple2 #details2{
+    display:none;
+}
+.temple #information {
+    display: none;
+}
+.temple #temple1 img{
+    float: left;
+    width:35%;
+    margin-right:5px;
+    margin-left:5px;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+}
+.temple #temple2 img{
+    float: right;
+    width:35%;
+    margin-left:5px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:5px;
+}
+.temple #temple1 p{
+    margin-left:5px;
+    text-align:justify;
+    margin-right:5px;
+}
+.temple #temple2 p {
+    margin-left:5px;
+    text-align:justify;
+    margin-right: 5px;
+}
+.temple #temple2 h2{
+    margin-left:5px;
+}
+.temple #temple1 #text1,
+.temple #temple2 #text2 {
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+}
+/*footer*/
+#author {
+    font-size: 12px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin:auto;
+    text-align: center;
+    border: 2px solid black;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    color:#862d1d;
+    font-weight: bold;
+}
+#templeinfo{
+    display: flex;
+    flex-direction: row;
+    margin-top:10px;
+    border-bottom: 10px solid #862d1d ;
+    border-bottom: 10px;
+    border-left:10px;
+}
+#templeinfo img{
+    width:20%;
+    height: auto;
+}
+#templeinfo iframe{
+    margin-right: 1rem;
+    margin-left:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+#templeinfo iframe{
+    display:none;
+}
+#templeinfo a img{
+    width:100%;
+    margin-right:20px;
+    margin-top:40px;
+}
+#templeinfo p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 12px;
+    margin-top:4rem;
+    margin-bottom: auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*temples page*/
+#temple-inn-home #temple-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px,1fr));
+}
+#temple-inn-home #temple-cards section{
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right:10px;
+    margin-bottom: 5px;
+    line-height: 10px;
+    background-color:#d9ae61;
+  
+
+}
+#temple-inn-home #temple-cards section img{
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+#temple-inn-home #temple-cards section img:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+#temple-inn-home #temple-cards section h2{
+    font-size:18px;
+}
+/*reservation page*/
+form {
+    display:flex;
+    flex-direction: column;
+}
+form fieldset {
+    margin: 2rem 1rem .5rem 1rem;
+    border: 2px solid black;
+    border-radius:5px;
+    padding: .5rem 5%;
+    background-color: #d9ae61;
+    max-width: auto;
+}
+form legend {
+    margin:0 1rem;
+    padding:0 .5rem;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif ;
+    font-weight: bold;
+}
+form #guestinfo .field, form #room .field{
+    display:block;
+    padding-top:0.5rem;
+    font-size: .9rem;
+    font-family:'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+form #guestinfo .field input, #room .field input{
+    display:block;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding:0.75rem;
+    background-color:rgba(235, 240, 238, 0.849);
+    width:100%;
+    max-width:15rem;
+
+}
+form #room .field textarea{
+    display: block;
+    border-radius: 5px;
+    background-color:rgba(235, 240, 238, 0.849);
+    width:98%;
+}
+form #guestinfo .field input:required,
+form #room .sbs input:required {
+    border-right: 5px solid red;
+    border-left: 5px solid red;
+}
+#reservation-form form{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: fit-content;
+}
+form .submitBtn {
+    background-color:#862d1d;
+    padding: 5px;
+    color:antiquewhite;
+    font-size:large;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    width:50%;
+    margin-left: 15px;
+}
+form .submitBtn:hover {
+    opacity: 1;
+	background-color:#d9ae61;
+    color: #0f0f0f ;
+    background-image: linear-gradient(white, #862d1d);
+}
+form #room .sbs{
+    display:flex;
+    flex-direction: column;
+}
+form #room .sbs #selectdate{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+form #room .sbs #levelselect,
+form #room .sbs #locationselect,
+form #room .sbs .room-select input,
+form #room .sbs #selectdate input,
+form #room .sbs .location-select input{
+   font-size: 16px;
+   padding: 10px;
+   border-radius: 5px;
+   background-color:rgba(235, 240, 238, 0.849);
+
+}
+form #room .sbs .room-select input,
+form #room .sbs #selectdate input{
+    width:90%;
+    max-width:7rem;
+}
+form #room .sbs{
+    padding-bottom:1rem;
+    font-size: .9rem;
+    font-family:'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+form #room .sbs label,
+form #room .sbs label .room-select,
+form #room .sbs label .location-select{
+    padding: .5rem;
+}
+#reservation #temple-inn-home #reservation-form h3{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+}
+#reservation #temple-inn-home #reservation-form p{
+    font-size: 16px;
+}
+#reservation #temple-inn-home{
+    margin-left:auto;
+    margin-right:auto;
+}
+/*thank you page*/
+
+#thankyou #temple-inn-home #submitted{
+    text-align: center;
+    max-width:900px;
+    margin-right:auto;
+    margin-left:auto;
+    border:3px solid black;
+    padding:50px;
+    border-radius: 30px 10px 30px 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-image: linear-gradient(white, #d9ae61, #862d1d);
+    box-shadow: 10px 10px 30px;
+
+}
+#thankyou #temple-inn-home #submitted h3{
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+#thankyou #temple-inn-home #submitted p{
+    font-size: 16px;
+    line-height: 3rem;
+    font-weight: bold;
+}
+/*contact page*/
+#contactsection #temple-inn-home .contact-form{
+    grid-row:2;
+}
+#contactsection form #userform,
+#contactsection form #userform{
+    display:block;
+    padding-top:0.5rem;
+    font-size: .9rem;
+    font-family:'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+
+}
+#contactsection form #userform input,
+#contactsection form #msgform input{
+    display:block;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding:0.75rem;
+    background-color:rgba(235, 240, 238, 0.849);
+    width:100%;
+    max-width:15rem;
+}
+#contactsection form #msgform textarea{
+    display:block;
+    border-radius: 5px;
+    background-color:rgba(235, 240, 238, 0.849);
+    width:98%;
+}
+#contactsection #contact-form form {
+    display:grid;
+    position: relative;
+    width:100%;
+    grid-template-columns: 1fr;
+}
+#contactsection #temple-inn-home #location-image {
+    display: none;
+}
+/*references page*/
+#references #temple-inn-home{
+    grid-template-columns: 1fr;
+}
+
+
+
+

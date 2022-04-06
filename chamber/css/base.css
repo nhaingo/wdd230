@@ -3,14 +3,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     margin: 0;
     padding: 0;
-    max-width: 940px;
+    
 }
 /*header*/
 header {
 	margin: 0 auto;
-    padding-bottom:0.2em;
-    background-color: #104911;
-    
+    padding-bottom:0.2em; 
+    background-color:#104911;
 }
 
 .headings {
