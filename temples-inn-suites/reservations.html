@@ -80,50 +80,51 @@
                 <h3>Reservation Form</h3>
                 <p>Please fill the form below to book your room. 
                     We will contact you shortly to confirm your reservation.</p>
-                    <form method="get" action="thankyou.html">
-                        <fieldset id="guestinfo">
-                            <legend>Guest Information</legend>
-                            <label class="field">First Name* <input type="text" name="fname" placeholder="First Name" required></label>
-                            <label class="field">Last Name* <input type="text" name="lname" placeholder="Last Name" required></label>
-                            <label class="field">Email Address* <input type="email" name="email" placeholder="user@email.org" required></label>
-                            <label class="field">Phone Number*<input type="tel" name="phone" placeholder="xxx xx xxx xx" pattern="^[0-9\+\s]{10,17}$" required></label>
-                            <label class="field">Address <input type="text" name="address" placeholder = "" pattern="^[A-zÀ-ž\s\-0-9]{3,}$"></label>
-                            <lablel class="field">City <input type="text" name="city" placeholder=""></label>
-                            <label class="field">State/Country<input type="text" name="state" placeholder=""></label>
-                        </fieldset>
-                        <fieldset id="room">
-                            <legend>Room Booking</legend>
-                            <div class="sbs">
-                                <label  class="location-select" for="roomlevel">Location:</label>
-                                <select id="locationselect" name="temple">
-                                    <option value=""disabled selected>--Please choose a location--</option>
-                                    <option value="durban">Durban - South Africa</option>
-                                    <option value="joburg">Johannesburg - South Africa </option>
-                                    <option value="accra">Accra - Ghana</option>
-                                    <option value="aba">Aba - Nigeria</option>
-                                    <option value="kinshasa">Kinshasa - RDC</option>
-                                </select>
+                <form method="get" action="thankyou.html">
+                    <fieldset id="guestinfo">
+                        <legend>Guest Information</legend>
+                        <label class="field">First Name* <input type="text" name="fname" placeholder="First Name" required></label>
+                        <label class="field">Last Name* <input type="text" name="lname" placeholder="Last Name" required></label>
+                        <label class="field">Email Address* <input type="email" name="email" placeholder="user@email.org" required></label>
+                        <label class="field">Phone Number*<input type="tel" name="phone" placeholder="xxx xx xxx xx" pattern="^[0-9\+\s]{10,17}$" required></label>
+                        <label class="field">Address <input type="text" name="address" placeholder = "" pattern="^[A-zÀ-ž\s\-0-9]{3,}$"></label>
+                        <lablel class="field">City <input type="text" name="city" placeholder=""></label>
+                        <label class="field">State/Country<input type="text" name="state" placeholder=""></label>
+                    </fieldset>
+                    <fieldset id="room">
+                        <legend>Room Booking</legend>
+                        <div class="sbs">
+                            <label class="location-select" for="locationselect">Location:</label>
+                            <select id="locationselect" name="locationselect">
+                                <option value=""disabled selected>--Please choose a location--</option>
+                                <option value="durban">Durban - South Africa</option>
+                                <option value="joburg">Johannesburg - South Africa </option>
+                                <option value="accra">Accra - Ghana</option>
+                                <option value="aba">Aba - Nigeria</option>
+                                <option value="kinshasa">Kinshasa - RDC</option>
+                            </select>
+                        </div>
+                        <div class="sbs">
+                            <label  class="room-select" for="roomlevel">Type of room:</label>
+                            <select id="roomlevel" name="roomlevel">
+                                <option value="disabled selected">--Please choose an option--</option>
+                                <option value="simple">One Bedroom</option>
+                                <option value="double">Two Bedrooms </option>
+                                <option value="kingsize">King Size</option>
+                                <option value="suite">Suite</option>
+                                <option value="familyroom">Family Room</option>
+                                <option value="special">Room with Kitchenette</option>
+                            </select>
+                            <label class="room-select" for="rooms">Number of rooms: <input type="number" name="rooms"></label>
+                            <div id="selectdate">
+                                <label>Check in<input type="date" name="checkin" required></label>  
+                                <label>Check out<input type="date" name="checkout" required></label>  
                             </div>
-                            <div class="sbs">
-                                <label  class="room-select" for="roomlevel">Type of room:</label>
-                                <select id="levelselect" name="roomlevel">
-                                    <option value=""disabled selected>--Please choose an option--</option>
-                                    <option value="simple">One Bedroom</option>
-                                    <option value="double">Two Bedrooms </option>
-                                    <option value="kingsize">King Size</option>
-                                    <option value="suite">Suite</option>
-                                    <option value="familyroom">Family Room</option>
-                                    <option value="special">Room with Kitchenette</option>
-                                </select>
-                                <label class="room-select" for="rooms">Number of rooms: <input type="number" name="rooms"></label>
-                                <div id="selectdate">
-                                    <label>Check in<input type="date" name="checkin" required></label>  
-                                    <label>Check out<input type="date" name="checkout" required></label>  
-                                </div>
-                            </div>
-                            <label class="field">Special Requests/Comments<textarea name="description" rows="8" cols="50"></textarea></label>
-                        </fieldset>
-                        <input type="submit" value="Book Now" class="submitBtn"> 
+                        </div>
+                        <label class="field">Special Requests/Comments<textarea name="description" rows="8" cols="50"></textarea></label>
+                    </fieldset>
+                    <input type="submit" value="Book Now" class="submitBtn">    
+                </form>
             </section>
         </main>
         <footer>

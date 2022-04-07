@@ -413,7 +413,7 @@ form #room .sbs #selectdate{
     flex-direction: row;
     width:100%;
 }
-form #room .sbs #levelselect,
+form #room .sbs #roomlevel,
 form #room .sbs #locationselect,
 form #room .sbs .room-select input,
 form #room .sbs #selectdate input,
