@@ -304,6 +304,7 @@ main #about-us, .banner {
 }
 #temple-inn-home #temple-cards section{
     border: 5px solid black;
+    box-shadow:#862d1d 10px 10px 20px;
     border-radius: 5px;
     margin-top: 5px;
     margin-left: 10px;
