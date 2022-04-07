@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="WDD230: Home Page for Temple Inn and Suites">
-        <title>Temple Inn and Suites Home Page</title>
+        <meta name="description" content="Reception page for specialized reception services at Temple Inn and Suites">
+        <title>Temple Inn and Suites Reception Page</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
     </head>
-    <body>
+    <body id="receptionsection">
         <header>
             <div class="heading">
                 <section id = "heading-name">
@@ -47,7 +47,6 @@
             </div>
         </header>
         <main id="temple-inn-home">
-            
             <div class="banner">
                 <p><a href="contact.html">Contact Us for more information</a></p>
                 <picture class="banner-image">
@@ -64,74 +63,25 @@
                 Whether you are here to plan your wedding or to look for an affordable place to stay during your works at the temple, 
                 we are here for you, and we have different options that could perfectly meet your needs. </p>
             </div>
-            <section class="smallview">
-                <div id="weather">
-                    <h2>Weather Forecast</h2>
-                    <div class="wea"></div>
-                        <p>Current Temperature: <span id="current-temp"></span>&deg;C</p>
-                        <span id="icon-src"></span><figure><img src="" alt="" id="weathericon" /><figcaption></figcaption></figure>      
-                        <hr>
-                    
-                        <p>Wind Speed: <span id="speed">15</span> km/h</p>
-                        <p>Humidity: <span id="humidity"></span></p>
-                    </div>
-                </div>
-                <div id="booking">
-                    <h2>Book Now</h2>
-                    <a href="reservations.html"><img src="images/bedroom.jpg" alt="image of a hotel bedroom"></a>
-                </div>
-                <div id="contact">
-                    <h2>Address & Phone</h2>
-                    <p>Temple Inn & Suites Headquarter</p>
-                    <p>4810 Montgomery Ln #300, Bethesda, MD 20814</p><hr>
-                    <p>phone number: <br>+1 300-555-0660</p>
-                </div>
-            </section>
-            <section class="temple">
-                <div id="temple1">
-                    <img src="images/placeholder.jpg" data-src="images/durban-temple.jpg" alt="Temple of Durban - South Africa" loading="lazy">
-                    <h2>Durban Temple</h2>
-                    <p id="text1">The temple was announced by President Thomas S. Monson on October 1, 2011. Elder Carl B. Cook, 
-                        then President of the Africa Southeast Area, presided over the groundbreaking ceremony on April 9, 2016.
-                        The Durban South Africa Temple was dedicated on Sunday, February 16, 2020. 
-                        The temple is located atop a grassy knoll about 12 miles north of the Durban city center.</p>
-                    <p id="address1">2 Izinga Drive, Izinga Ridge 4021, Umhlanga, KwaZulu-Natal, South Africa</p>
-                    <br>
-                    <div id="details1">
-                        <h3>Services</h3>
-                        <p>No clothing rental available</p>
-                        <p>No cafeteria available</p>
-                        <p>No patron housing available</p>
-                        <p>Distribution center nearby</p>
-                        <p>Telephone: (27) 31-140-0240</p>
-                    </div>
-                </div>
-                <div id="temple2">
-                    <img src="images/placeholder.jpg" data-src="images/johannesburg-temple.jpg" alt="Temple of Johannesburg - South Africa">
-                    <h2>Johannesburg Temple</h2>
-                    <p id="text2">Plans to construct the temple were announced 1 April 1981, Church leaders broke ground 27 November 1982, and President Gordon B. Hinckley, 
-                        then a counselor in the First Presidency of The Church of Jesus Christ of Latter-day Saints, 
-                        dedicated the Johannesburg South Africa Temple 24 August 1985. 
-                        The temple serves Latter-day Saints in southern Africa. </p>
-                    <p id="address2">7 Jubilee Road, Parktown, Johannesburg 2193, South Africa</p>
-                    <br>
-                    <div id="details2">
-                        <h3>Services</h3>
-                        <p>Clothing rental available</p>
-                        <p>No cafeteria available</p>
-                        <p>No patron housing available</p>
-                        <p>Distribution center nearby</p>
-                        <p>Telephone: (27) 11-645-1540</p>
-                        
-                    </div>
-                </div>
-                <div id="information">
-                    <h3>Additionnal Information</h3>
-                    <p>Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. 
-                        Please allow sufficient time to perform all the ordinances you wish to complete during your visit. 
-                        For additional help and information, please call the temple.</p>
-                </div>
-            </section>
+            <div id="services-img">
+                <img id="std" src="images/couple.jpg" alt="temple wedding temple inn and suites">
+                <img id="bkfst" src="images/suites.jpg" alt="couple suite temple inn and suites">
+                <img id="fml" src="images/wed-reception.jpg" alt="wedding reception temple inn and suites">
+             </div>
+             <div id="contact-sect">
+                <section class="contact-form">
+                    <form id="form1" method="post" action="javascript:alert('Submitted')">
+                        <fieldset id="userform">
+                            <legend>Contact Us</legend>
+                            <label class="field">Name* <input type="text" name="fname" placeholder="First Name" required></label>
+                            <label class="field">Name<input type="text" name="lname" placeholder="Last Name"></label>
+                            <label class="field">Email Address* <input type="email" name="email" placeholder="user@email.org" required></label>
+                            <label class="field">Phone Number<input type="tel" name="phone" placeholder="xxx xx xxx xx" pattern="^[0-9\+\s]{10,17}$" required></label>
+                            <label class="field">Question/Concern<textarea name="description" rows="6" cols="50"></textarea></label>
+                        </fieldset>
+                        <input class="submitBtn" type="button" value="Submit Form" onclick="document.forms[0].submit()"/>
+                    </form>
+                </section>
         </main>
         <footer>
             <div id="author">

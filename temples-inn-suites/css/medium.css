@@ -235,7 +235,6 @@
         margin-left:4rem;
         border-radius: 50%;
     }
-    }
     #contactsection #temple-inn-home .contact-form{
         grid-column: 1;
         grid-row: 1;
@@ -244,4 +243,21 @@
         border-radius:50%;
         box-shadow: 10px 10px 30px;
     }
+    /*services page*/
+
+    #servicesection #temple-inn-home .smallview{
+        margin-top:5px;
+        margin-bottom:5px;
+
+    }
+    /*reception page*/
+    #receptionsection #temple-inn-home{
+        grid-template-columns: 1fr;
+    }
+    /*missionary page*/
+
+    #missionarysection #temple-in-home{
+    grid-template-columns: 1fr;
+}
+
 }
