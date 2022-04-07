@@ -527,11 +527,58 @@ form #room .sbs label .location-select{
 }
 #servicesection #temple-inn-home .services img{
     box-shadow: 10px 10px 30px;
+    border-radius: 10%;
+}
+#servicesection #temple-inn-home .services #text1,
+#servicesection #temple-inn-home .services #text2{
+    border: 1px solid black;
     border-radius: 10px;
+    font-size: 14px ;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: linear-gradient(white, #d9ae61);
+    line-height: 30px;
+    width:90%;
+    padding-right:10px;
+    text-align: justify;
+}
+#servicesection #temple-inn-home .services #text1 h3,
+#servicesection #temple-inn-home .services #text2 h3 {
+    font-size:24px;
+    font-family:'Lato', sans-serif;
+    margin-left:10px;
+}
+#servicesection #temple-inn-home .services #text1 #ftn,
+#servicesection #temple-inn-home .services #text1 #pool,
+#servicesection #temple-inn-home .services #text2 #stl,
+#servicesection #temple-inn-home .services #text2 #pbl{
+    display:none;
+}
+#servicesection #temple-inn-home .services #text1 #fml,
+#servicesection #temple-inn-home .services #text2 #bkfst{
+        display:flex;
+        flex-direction: column;
+        margin:10px;
+    }
+#servicesection #temple-inn-home .services #services-img{
+    display:none;
+}
+#servicesection #temple-inn-home .services #text1 #img-text1,
+#servicesection #temple-inn-home .services #text2 #img-text2{
+    margin-left:auto;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+#servicesection #temple-inn-home .services #text1 #img-text2{
+    margin-left:auto;
+    margin-right: 10px;
 }
 /*missionary page*/
 #missionarysection #temple-inn-home{
     grid-template-columns: 1fr;
+   
 }
 #missionary #temple-inn-home #missionary-img img{
     box-shadow: 10px 10px 30px;
