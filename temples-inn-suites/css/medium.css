@@ -244,9 +244,12 @@
         box-shadow: 10px 10px 30px;
     }
     /*services page*/
-    #servicesection #temple-inn-home .smallview{
+    #servicesection #temple-inn-home .smallview #booking,
+    #servicesection #temple-inn-home .smallview #contact,
+    #servicesection #temple-inn-home .smallview #weather{
         margin-top:5px;
         margin-bottom:5px;
+
     }
     #servicesection #temple-inn-home .services #text1,
     #servicesection #temple-inn-home .services #text2{
@@ -281,7 +284,7 @@
         grid-row:1;
         justify-items: center;
         margin-top:5rem;
-        margin-right:3rem;
+        margin-right:1rem;
     }
     #servicesection #temple-inn-home .services #text2 #img-text2{
         margin:0;
@@ -307,15 +310,6 @@
         grid-column: 2;
         margin-bottom: 6rem;
     }
-    #servicesection #temple-inn-home .services #services-img {
-        display:block;
-        padding-top:2rem;
-        margin-left:10px;
-    }
-    #servicesection #temple-inn-home .services #services-img img{
-        margin-right: 2rem;
-        border-radius: 30%;
-    }
     #servicesection #temple-inn-home .services #text1,
     #servicesection #temple-inn-home .services #text2{
         font-size:16px;
@@ -329,6 +323,42 @@
 
     #missionarysection #temple-in-home{
     grid-template-columns: 1fr;
-}
-
+    }
+    #missionarysection #temple-inn-home #missionary-img img{
+        box-shadow: 10px 10px 30px;
+        border-radius: 10px;
+        width:30%; 
+        padding:5px;
+        margin-right:10px;
+    }
+    #missionarysection #temple-inn-home #missionary-img {
+        display:flex;
+        flex-direction: row;
+    }
+    #missionarysection #temple-inn-home #contact-sect .contact-form #form1 .submitBtn{
+        width:20%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    /*reception page*/
+    #receptionsection #temple-in-home{
+        grid-template-columns: 1fr;
+        }
+    #receptionsection #temple-inn-home #reception-img img{
+        box-shadow: 10px 10px 30px;
+        border-radius: 10px;
+        width:30%; 
+        padding:5px;
+        margin-right:10px;
+    }
+    #receptionsection #temple-inn-home #reception-img {
+        display:flex;
+        flex-direction: row;
+    }
+    #receptionsection #temple-inn-home #contact-sect .contact-form #form1 .submitBtn{
+        width:20%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
 }

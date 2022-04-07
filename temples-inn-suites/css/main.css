@@ -483,7 +483,9 @@ form #room .sbs label .location-select{
     grid-row:2;
 }
 #contactsection form #userform,
-#contactsection form #userform{
+#contactsection form #msgform,
+#missionarysection #temple-inn-home form #userform,
+#receptionsection #temple-in-home form #userform{
     display:block;
     padding-top:0.5rem;
     font-size: .9rem;
@@ -492,7 +494,9 @@ form #room .sbs label .location-select{
 
 }
 #contactsection form #userform input,
-#contactsection form #msgform input{
+#contactsection form #msgform input,
+#missionarysection #temple-inn-home form #userform input,
+#receptionsection #temple-inn-home form #userform input{
     display:block;
     font-size: 1rem;
     border: 1px solid black;
@@ -502,16 +506,21 @@ form #room .sbs label .location-select{
     width:100%;
     max-width:15rem;
 }
-#contactsection form #msgform textarea{
+#contactsection form #msgform textarea,
+#missionarysection #temple-inn-home form #userform textarea,
+#receptionsection #temple-inn-home form #userform textarea{
     display:block;
     border-radius: 5px;
     background-color:rgba(235, 240, 238, 0.849);
     width:98%;
+    max-width: 30rem;
 }
-#contactsection #contact-form form {
+#contactsection #contact-form form,
+#missionarysection #temple-inn-home #contact-form form
+#receptionsection #temple-inn-home #contact-form form{
     display:grid;
     position: relative;
-    width:100%;
+    width:50%;
     grid-template-columns: 1fr;
 }
 #contactsection #temple-inn-home #location-image {
@@ -580,10 +589,49 @@ form #room .sbs label .location-select{
     grid-template-columns: 1fr;
    
 }
-#missionary #temple-inn-home #missionary-img img{
+#missionarysection #temple-inn-home #missionary-img img{
     box-shadow: 10px 10px 30px;
     border-radius: 10px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20px;
+    padding:5px;
+       
 }
+#missionarysection #temple-inn-home #missionary-img {
+    display:grid;
+    grid-template-columns: 1fr;
+    margin-left:10px;
+}
+#missionarysection #temple-inn-home #contact-sect .contact-form #form1 .submitBtn{
+    margin-bottom:30px;
+}
+/*reception page*/
+#receptionsection #temple-inn-home{
+    grid-template-columns: 1fr;
+   
+}
+#receptionsection #temple-inn-home #reception-img img{
+    box-shadow: 10px 10px 30px;
+    border-radius: 10px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20px;
+    padding:5px;
+       
+}
+#receptionsection #temple-inn-home #reception-img {
+    display:grid;
+    grid-template-columns: 1fr;
+    margin-left:10px;
+}
+#receptionsection #temple-inn-home #contact-sect .contact-form #form1 .submitBtn{
+    margin-bottom:30px;
+}
+
+
 
 
 
