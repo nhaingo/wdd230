@@ -56,10 +56,13 @@
     /*main*/
     #temple-inn-home{
         display:grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr;
         border-bottom: 10px solid #862d1d;
         grid-gap:8px;
     }
+    #temple-in-home{
+        grid-template-columns: 1fr;
+        }
     #temple-inn-home .smallview {
         display:grid;
         grid-template-columns:1fr;
@@ -69,8 +72,31 @@
         border-bottom: none;
         border: 2px solid black;
         border-radius: 5px;
-        background-color: #d9ae61;
+        background-color: #d9ae61;        
+    }
+    #temple-inn-home .smallview #booking,
+    #temple-inn-home .smallview #contact,
+    #temple-inn-home .smallview #weather{
+        margin-top:5px;
+        margin-bottom:5px;
+
+    }
+    .temple #temple1 img{
+        float: left;
+        width:35%;
+        margin-right:5px;
+        margin-left:5px;
+        margin-top:10px;
+        margin-bottom:10px;
         
+    }
+    .temple #temple2 img{
+        float: right;
+        width:35%;
+        margin-left:5px;
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-right:5px;
     }
    
     #temple-inn-home .temple{
