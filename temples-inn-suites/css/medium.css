@@ -281,6 +281,8 @@
     #servicesection #temple-inn-home .services #text2{
         display:grid;
         grid-template-columns: 1fr 1fr;
+        margin-right:auto;
+        margin-left:auto;
     }
     #servicesection #temple-inn-home .services #text1 ul{
         grid-column: 1;
