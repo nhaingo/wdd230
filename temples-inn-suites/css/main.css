@@ -101,7 +101,6 @@ nav ul.open {
     font-weight: bold;
     padding: 0;
     background-color: gray;
-    border-radius:px;
     position: fixed;
     margin: 30px;
     left: 0;
@@ -219,6 +218,9 @@ main #about-us, .banner {
     margin-left:5px;
     margin-top:10px;
     margin-bottom:10px;
+    border:2px solid transparent;
+    border-radius: 10px;
+    box-shadow: rgb(16, 11, 6) 5px 5px 20px;
     
 }
 .temple #temple2 img{
@@ -228,6 +230,9 @@ main #about-us, .banner {
     margin-top:10px;
     margin-bottom:10px;
     margin-right:5px;
+    border:2px solid transparent;
+    border-radius: 10px;
+    box-shadow: rgb(16, 11, 6) 5px 5px 20px;
 }
 .temple #temple1 p{
     margin-left:5px;
@@ -345,7 +350,6 @@ form fieldset {
     border-radius:5px;
     padding: .5rem 5%;
     background-color: #d9ae61;
-    max-width: auto;
 }
 form legend {
     margin:0 1rem;

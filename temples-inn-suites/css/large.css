@@ -1,9 +1,7 @@
 @media only screen and (min-width: 1081px) {
     
     body{
-        max-width:auto;
         margin:auto;
-        padding:auto;
     }
     /*header*/
     .heading {
