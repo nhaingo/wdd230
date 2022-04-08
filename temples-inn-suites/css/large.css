@@ -73,7 +73,7 @@
     }
     /*main*/
     #temple-inn-home #information{
-        display: none;
+        display: block;
     }
     #temple-inn-home h2{
         font-size: 24px;
