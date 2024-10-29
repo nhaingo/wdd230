@@ -183,7 +183,7 @@
         text-align: center;
     }
     /*temples page*/
-    #templesection #temple-inn-home{
+    #templesection #temple-inn-home, .weathersection{
         grid-template-columns: 1fr;
     }
     #temple-inn-home #temple-cards section{

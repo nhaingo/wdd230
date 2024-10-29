@@ -307,6 +307,12 @@ main #about-us, .banner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px,1fr));
 }
+.weathersection{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px,1fr));
+    padding-left: 10px;
+    padding-right: 10px;
+}
 #temple-inn-home #temple-cards section{
     border: 5px solid black;
     box-shadow:#862d1d 10px 10px 20px;
@@ -669,8 +675,9 @@ form #room .sbs label .location-select{
     line-height: 20px;
 
 }
-
-
+#location-select{
+    text-align: center;
+}
 
 
 
