@@ -78,7 +78,16 @@
   #location-form{
     background-color: black;
     text-align: center;
-  }
+    }
+#location-form button:hover{
+    background-color: yellow;
+  font-size: 18px;
+}
+#location-select:hover{
+    -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+}
 
 
   
